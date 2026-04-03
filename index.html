@@ -1,501 +1,558 @@
-     1|<!DOCTYPE html>
-     2|<html lang="en">
-     3|<head>
-     4|  <meta charset="UTF-8" />
-     5|  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-     6|  <title>Jodi Isaacson — I Lost 215 Pounds at 65. Here's the Truth.</title>
-     7|  <meta name="description" content="Certified Holistic Nutritionist. Lost 120 lbs, gained back, lost 215 total at 65 through raw plant-based living. It's never too late to start again." />
-     8|  <link rel="preconnect" href="https://fonts.googleapis.com" />
-     9|  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
-    10|  <style>
-    11|    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-    12|
-    13|    :root {
-    14|      --green: #3d6b4f;
-    15|      --green-light: #e8f0eb;
-    16|      --gold: #c9a84c;
-    17|      --dark: #1a1a1a;
-    18|      --mid: #4a4a4a;
-    19|      --light: #f8f6f2;
-    20|      --white: #ffffff;
-    21|    }
-    22|
-    23|    html { scroll-behavior: smooth; }
-    24|
-    25|    body {
-    26|      font-family: 'Inter', sans-serif;
-    27|      color: var(--dark);
-    28|      background: var(--white);
-    29|      line-height: 1.6;
-    30|    }
-    31|
-    32|    /* NAV */
-    33|    nav {
-    34|      position: fixed;
-    35|      top: 0; left: 0; right: 0;
-    36|      z-index: 100;
-    37|      display: flex;
-    38|      justify-content: space-between;
-    39|      align-items: center;
-    40|      padding: 18px 48px;
-    41|      background: rgba(255,255,255,0.95);
-    42|      backdrop-filter: blur(8px);
-    43|      border-bottom: 1px solid rgba(0,0,0,0.06);
-    44|    }
-    45|
-    46|    .nav-logo {
-    47|      font-family: 'Playfair Display', serif;
-    48|      font-size: 22px;
-    49|      color: var(--green);
-    50|      text-decoration: none;
-    51|      letter-spacing: 0.5px;
-    52|    }
-    53|
-    54|    .nav-links {
-    55|      display: flex;
-    56|      gap: 32px;
-    57|      list-style: none;
-    58|    }
-    59|
-    60|    .nav-links a {
-    61|      font-size: 14px;
-    62|      color: var(--mid);
-    63|      text-decoration: none;
-    64|      font-weight: 500;
-    65|      letter-spacing: 0.3px;
-    66|      transition: color 0.2s;
-    67|    }
-    68|
-    69|    .nav-links a:hover { color: var(--green); }
-    70|
-    71|    /* HERO */
-    72|    .hero {
-    73|      min-height: 100vh;
-    74|      display: grid;
-    75|      grid-template-columns: 1fr 1fr;
-    76|      align-items: center;
-    77|      padding: 100px 48px 60px;
-    78|      gap: 60px;
-    79|      background: var(--light);
-    80|    }
-    81|
-    82|    .hero-text { max-width: 560px; }
-    83|
-    84|    .hero-eyebrow {
-    85|      font-size: 13px;
-    86|      font-weight: 600;
-    87|      letter-spacing: 2px;
-    88|      text-transform: uppercase;
-    89|      color: var(--gold);
-    90|      margin-bottom: 20px;
-    91|    }
-    92|
-    93|    .hero-headline {
-    94|      font-family: 'Playfair Display', serif;
-    95|      font-size: clamp(36px, 4vw, 58px);
-    96|      line-height: 1.15;
-    97|      color: var(--dark);
-    98|      margin-bottom: 24px;
-    99|    }
-   100|
-   101|    .hero-headline span { color: var(--green); }
-   102|
-   103|    .hero-sub {
-   104|      font-size: 18px;
-   105|      color: var(--mid);
-   106|      line-height: 1.7;
-   107|      margin-bottom: 36px;
-   108|      font-weight: 300;
-   109|    }
-   110|
-   111|    .hero-cta {
-   112|      display: flex;
-   113|      gap: 16px;
-   114|      flex-wrap: wrap;
-   115|    }
-   116|
-   117|    .btn-primary {
-   118|      display: inline-block;
-   119|      padding: 16px 32px;
-   120|      background: var(--green);
-   121|      color: var(--white);
-   122|      text-decoration: none;
-   123|      border-radius: 4px;
-   124|      font-weight: 600;
-   125|      font-size: 15px;
-   126|      letter-spacing: 0.3px;
-   127|      transition: background 0.2s, transform 0.2s;
-   128|    }
-   129|
-   130|    .btn-primary:hover { background: #2d5340; transform: translateY(-1px); }
-   131|
-   132|    .btn-secondary {
-   133|      display: inline-block;
-   134|      padding: 16px 32px;
-   135|      border: 2px solid var(--green);
-   136|      color: var(--green);
-   137|      text-decoration: none;
-   138|      border-radius: 4px;
-   139|      font-weight: 600;
-   140|      font-size: 15px;
-   141|      transition: all 0.2s;
-   142|    }
-   143|
-   144|    .btn-secondary:hover { background: var(--green); color: var(--white); }
-   145|
-   146|    .hero-image {
-   147|      display: flex;
-   148|      justify-content: center;
-   149|      position: relative;
-   150|    }
-   151|
-   152|    .hero-image img {
-   153|      width: 100%;
-   154|      max-width: 480px;
-   155|      height: auto;
-   156|      object-fit: contain;
-   157|      border-radius: 8px;
-   158|      box-shadow: 0 40px 80px rgba(0,0,0,0.15);
-   159|    }
-   160|
-   161|    .hero-stat {
-   162|      position: absolute;
-   163|      bottom: -20px;
-   164|      left: -20px;
-   165|      background: var(--white);
-   166|      border-radius: 8px;
-   167|      padding: 20px 28px;
-   168|      box-shadow: 0 20px 50px rgba(0,0,0,0.12);
-   169|      text-align: center;
-   170|    }
-   171|
-   172|    .hero-stat-num {
-   173|      font-family: 'Playfair Display', serif;
-   174|      font-size: 42px;
-   175|      color: var(--green);
-   176|      line-height: 1;
-   177|    }
-   178|
-   179|    .hero-stat-label {
-   180|      font-size: 12px;
-   181|      color: var(--mid);
-   182|      text-transform: uppercase;
-   183|      letter-spacing: 1.5px;
-   184|      margin-top: 4px;
-   185|    }
-   186|
-   187|    /* TRUTH SECTION */
-   188|    .truth {
-   189|      padding: 100px 48px;
-   190|      max-width: 900px;
-   191|      margin: 0 auto;
-   192|      text-align: center;
-   193|    }
-   194|
-   195|    .section-label {
-   196|      font-size: 12px;
-   197|      font-weight: 600;
-   198|      letter-spacing: 2.5px;
-   199|      text-transform: uppercase;
-   200|      color: var(--gold);
-   201|      margin-bottom: 16px;
-   202|    }
-   203|
-   204|    .section-title {
-   205|      font-family: 'Playfair Display', serif;
-   206|      font-size: clamp(28px, 3vw, 42px);
-   207|      color: var(--dark);
-   208|      margin-bottom: 28px;
-   209|      line-height: 1.25;
-   210|    }
-   211|
-   212|    .truth-body {
-   213|      font-size: 18px;
-   214|      color: var(--mid);
-   215|      line-height: 1.85;
-   216|      font-weight: 300;
-   217|      max-width: 720px;
-   218|      margin: 0 auto;
-   219|    }
-   220|
-   221|    .truth-body strong {
-   222|      color: var(--dark);
-   223|      font-weight: 600;
-   224|    }
-   225|
-   226|    /* TIMELINE */
-   227|    .timeline-section {
-   228|      background: var(--green);
-   229|      padding: 100px 48px;
-   230|      color: var(--white);
-   231|    }
-   232|
-   233|    .timeline-section .section-label { color: var(--gold); }
-   234|    .timeline-section .section-title { color: var(--white); text-align: center; margin-bottom: 60px; }
-   235|
-   236|    .timeline {
-   237|      display: grid;
-   238|      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-   239|      gap: 40px;
-   240|      max-width: 1000px;
-   241|      margin: 0 auto;
-   242|    }
-   243|
-   244|    .timeline-item { text-align: center; }
-   245|
-   246|    .timeline-num {
-   247|      font-family: 'Playfair Display', serif;
-   248|      font-size: 52px;
-   249|      color: var(--gold);
-   250|      line-height: 1;
-   251|      margin-bottom: 10px;
-   252|    }
-   253|
-   254|    .timeline-desc {
-   255|      font-size: 15px;
-   256|      color: rgba(255,255,255,0.85);
-   257|      line-height: 1.6;
-   258|    }
-   259|
-   260|    /* BEFORE/AFTER */
-   261|    .transformation {
-   262|      padding: 100px 48px;
-   263|      background: var(--light);
-   264|    }
-   265|
-   266|    .transformation .section-label,
-   267|    .transformation .section-title { text-align: center; }
-   268|
-   269|    .transformation .section-title { margin-bottom: 16px; }
-   270|
-   271|    .transformation-sub {
-   272|      text-align: center;
-   273|      color: var(--mid);
-   274|      font-size: 16px;
-   275|      margin-bottom: 60px;
-   276|      font-weight: 300;
-   277|    }
-   278|
-   279|    .photos-grid {
-   280|      display: grid;
-   281|      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-   282|      gap: 24px;
-   283|      max-width: 900px;
-   284|      margin: 0 auto;
-   285|    }
-   286|
-   287|    .photo-card { position: relative; border-radius: 8px; overflow: hidden; }
-   288|
-   289|    .photo-card img {
-   290|      width: 100%;
-   291|      height: 420px;
-   292|      object-fit: contain;
-   293|      background: #f0ece6;
-   294|      display: block;
-   295|      transition: transform 0.4s;
-   296|    }
-   297|
-   298|    .photo-card:hover img { transform: scale(1.02); }
-   299|
-   300|    .photo-label {
-   301|      position: absolute;
-   302|      bottom: 0; left: 0; right: 0;
-   303|      padding: 16px 20px;
-   304|      background: linear-gradient(transparent, rgba(0,0,0,0.7));
-   305|      color: var(--white);
-   306|      font-size: 14px;
-   307|      font-weight: 600;
-   308|      letter-spacing: 0.5px;
-   309|    }
-   310|
-   311|    /* MESSAGE */
-   312|    .message {
-   313|      padding: 100px 48px;
-   314|      max-width: 800px;
-   315|      margin: 0 auto;
-   316|    }
-   317|
-   318|    .message-quote {
-   319|      font-family: 'Playfair Display', serif;
-   320|      font-size: clamp(22px, 2.5vw, 34px);
-   321|      color: var(--dark);
-   322|      line-height: 1.5;
-   323|      border-left: 4px solid var(--gold);
-   324|      padding-left: 32px;
-   325|      margin-bottom: 40px;
-   326|    }
-   327|
-   328|    .message-body {
-   329|      font-size: 17px;
-   330|      color: var(--mid);
-   331|      line-height: 1.85;
-   332|      font-weight: 300;
-   333|    }
-   334|
-   335|    .message-body p { margin-bottom: 20px; }
-   336|
-   337|    /* FOLLOW */
-   338|    .follow {
-   339|      background: var(--light);
-   340|      padding: 100px 48px;
-   341|      text-align: center;
-   342|    }
-   343|
-   344|    .follow .section-title { margin-bottom: 16px; }
-   345|
-   346|    .follow-sub {
-   347|      color: var(--mid);
-   348|      font-size: 17px;
-   349|      margin-bottom: 48px;
-   350|      font-weight: 300;
-   351|    }
-   352|
-   353|    .social-grid {
-   354|      display: flex;
-   355|      justify-content: center;
-   356|      gap: 20px;
-   357|      flex-wrap: wrap;
-   358|    }
-   359|
-   360|    .social-card {
-   361|      display: flex;
-   362|      align-items: center;
-   363|      gap: 12px;
-   364|      padding: 18px 28px;
-   365|      background: var(--white);
-   366|      border-radius: 8px;
-   367|      text-decoration: none;
-   368|      color: var(--dark);
-   369|      font-weight: 600;
-   370|      font-size: 15px;
-   371|      box-shadow: 0 4px 20px rgba(0,0,0,0.08);
-   372|      transition: transform 0.2s, box-shadow 0.2s;
-   373|      border: 1px solid rgba(0,0,0,0.06);
-   374|    }
-   375|
-   376|    .social-card:hover {
-   377|      transform: translateY(-3px);
-   378|      box-shadow: 0 12px 40px rgba(0,0,0,0.14);
-   379|    }
-   380|
-   381|    .social-icon { font-size: 22px; }
-   382|
-   383|    /* FOOTER */
-   384|    footer {
-   385|      padding: 40px 48px;
-   386|      text-align: center;
-   387|      color: var(--mid);
-   388|      font-size: 13px;
-   389|      border-top: 1px solid rgba(0,0,0,0.08);
-   390|    }
-   391|
-   392|    footer a { color: var(--green); text-decoration: none; }
-   393|
-   394|    /* RESPONSIVE */
-   395|    @media (max-width: 768px) {
-   396|      nav { padding: 16px 24px; }
-   397|      .nav-links { display: none; }
-   398|      .hero { grid-template-columns: 1fr; padding: 100px 24px 60px; text-align: center; }
-   399|      .hero-image { order: -1; }
-   400|      .hero-image img { height: 400px; }
-   401|      .hero-cta { justify-content: center; }
-   402|      .hero-stat { bottom: -16px; left: 10px; }
-   403|      .truth, .message { padding: 60px 24px; }
-   404|      .timeline-section, .transformation, .follow { padding: 60px 24px; }
-   405|    }
-   406|  </style>
-   407|</head>
-   408|<body>
-   409|
-   410|  <!-- NAV -->
-   411|  <nav>
-   412|    <a class="nav-logo" href="#">Jodi Isaacson</a>
-   413|    <ul class="nav-links">
-   414|      <li><a href="#story">My Story</a></li>
-   415|      <li><a href="#transformation">Transformation</a></li>
-   416|      <li><a href="#follow">Follow Along</a></li>
-   417|    </ul>
-   418|  </nav>
-   419|
-   420|  <!-- HERO -->
-   421|  <section class="hero">
-   422|    <div class="hero-text">
-   423|      <div class="hero-eyebrow">Certified Holistic Nutritionist · West Palm Beach, FL</div>
-   424|      <h1 class="hero-headline">
-   425|        I lost 120 lbs,<br/>
-   426|        gained 90 back,<br/>
-   427|        and lost <span>215 total.</span>
-   428|      </h1>
-   429|      <p class="hero-sub">
-   430|        At 65, I proved it's never too late to get healthy, start over, and live the life you actually want. Here's everything I learned.
-   431|      </p>
-   432|      <div class="hero-cta">
-   433|        <a href="#story" class="btn-primary">Read My Story</a>
-   434|        <a href="#follow" class="btn-secondary">Follow Along</a>
-   435|      </div>
-   436|    </div>
-   437|    <div class="hero-image">
-   438|      <img src="images/headshot.jpg" alt="Jodi Isaacson — Essentia Living" />
-   439|      <div class="hero-stat">
-   440|        <div class="hero-stat-num">215</div>
-   441|        <div class="hero-stat-label">Pounds Lost</div>
-   442|      </div>
-   443|    </div>
-   444|  </section>
-   445|
-   446|  <!-- TRUTH -->
-   447|  <section class="truth" id="story">
-   448|    <div class="section-label">The Real Story</div>
-   449|    <h2 class="section-title">This isn't a perfect transformation story. It's a real one.</h2>
-   450|    <p class="truth-body">
-   451|      I didn't lose 215 pounds in a straight line. I lost 120, hit a plateau that lasted a year, and figured out how to break through it. Then my husband almost died from toxic mega colon — and I gained 90 pounds back.<br/><br/>
-   452|      <strong>I started over. Again.</strong><br/><br/>
-   453|      I'm telling you this because I want you to know: getting knocked down is part of it. Getting sidetracked by life — by your family, by fear, by grief — is part of it. What matters is that you pick it back up. I did. And I finished.<br/><br/>
-   454|      Through whole food plant-based nutrition, movement, and mindset work, I transformed my health, reversed serious conditions, and at 65 I feel more alive than I did at 45. If I can do it — with all the setbacks, the plateaus, the real-life interruptions — so can you.
-   455|    </p>
-   456|  </section>
-   457|
-   458|  <!-- TIMELINE -->
-   459|  <section class="timeline-section">
-   460|    <div class="section-label" style="text-align:center;">The Journey</div>
-   461|    <h2 class="section-title">Real numbers. Real life.</h2>
-   462|    <div class="timeline">
-   463|      <div class="timeline-item">
-   464|        <div class="timeline-num">120</div>
-   465|        <div class="timeline-desc">Pounds lost in the first phase — through whole food plant-based eating</div>
-   466|      </div>
-   467|      <div class="timeline-item">
-   468|        <div class="timeline-num">1 yr</div>
-   469|        <div class="timeline-desc">Plateau — learned to break through it and keep going</div>
-   470|      </div>
-   471|      <div class="timeline-item">
-   472|        <div class="timeline-num">90</div>
-   473|        <div class="timeline-desc">Pounds regained when life hit hard — and that's okay</div>
-   474|      </div>
-   475|      <div class="timeline-item">
-   476|        <div class="timeline-num">215</div>
-   477|        <div class="timeline-desc">Total pounds lost — because I started over and finished</div>
-   478|      </div>
-   479|    </div>
-   480|  </section>
-   481|
-   482|  <!-- TRANSFORMATION -->
-   483|  <section class="transformation" id="transformation">
-   484|    <div class="section-label">The Proof</div>
-   485|    <h2 class="section-title">Before & After</h2>
-   486|    <p class="transformation-sub">Real photos. No filters. No tricks.</p>
-   487|    <div class="photos-grid">
-   488|      <div class="photo-card">
-   489|        <img src="images/before1.jpg" alt="Jodi before transformation" />
-   490|        <div class="photo-label">Before</div>
-   491|      </div>
-   492|      <div class="photo-card">
-   493|        <img src="images/before295.jpg" alt="Jodi during journey" />
-   494|        <div class="photo-label">During the Journey</div>
-   495|      </div>
-   496|      <div class="photo-card">
-   497|        <img src="images/after1.jpg" alt="Jodi after 215 pounds lost" />
-   498|        <div class="photo-label">215 Lbs Lost · Age 65</div>
-   499|      </div>
-   500|    </div>
-   501|
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jodi Isaacson — I Lost 215 Pounds at 65. Here's the Truth.</title>
+  <meta name="description" content="Certified Holistic Nutritionist. Lost 215 lbs at 65 through raw plant-based living. It's never too late to start again." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --green: #3d6b4f;
+      --green-light: #e8f0eb;
+      --gold: #c9a84c;
+      --dark: #1a1a1a;
+      --mid: #4a4a4a;
+      --light: #f8f6f2;
+      --white: #ffffff;
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      color: var(--dark);
+      background: var(--white);
+      line-height: 1.6;
+    }
+
+    /* NAV */
+    nav {
+      position: fixed;
+      top: 0; left: 0; right: 0;
+      z-index: 100;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 18px 48px;
+      background: rgba(255,255,255,0.95);
+      backdrop-filter: blur(8px);
+      border-bottom: 1px solid rgba(0,0,0,0.06);
+    }
+
+    .nav-logo {
+      font-family: 'Playfair Display', serif;
+      font-size: 22px;
+      color: var(--green);
+      text-decoration: none;
+      letter-spacing: 0.5px;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 32px;
+      list-style: none;
+    }
+
+    .nav-links a {
+      font-size: 14px;
+      color: var(--mid);
+      text-decoration: none;
+      font-weight: 500;
+      letter-spacing: 0.3px;
+      transition: color 0.2s;
+    }
+
+    .nav-links a:hover { color: var(--green); }
+
+    /* HERO */
+    .hero {
+      min-height: 100vh;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      align-items: center;
+      padding: 100px 48px 60px;
+      gap: 60px;
+      background: var(--light);
+    }
+
+    .hero-text { max-width: 560px; }
+
+    .hero-eyebrow {
+      font-size: 13px;
+      font-weight: 600;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: 20px;
+    }
+
+    .hero-headline {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(36px, 4vw, 58px);
+      line-height: 1.15;
+      color: var(--dark);
+      margin-bottom: 24px;
+    }
+
+    .hero-headline span { color: var(--green); }
+
+    .hero-sub {
+      font-size: 18px;
+      color: var(--mid);
+      line-height: 1.7;
+      margin-bottom: 36px;
+      font-weight: 300;
+    }
+
+    .hero-cta {
+      display: flex;
+      gap: 16px;
+      flex-wrap: wrap;
+    }
+
+    .btn-primary {
+      display: inline-block;
+      padding: 16px 32px;
+      background: var(--green);
+      color: var(--white);
+      text-decoration: none;
+      border-radius: 4px;
+      font-weight: 600;
+      font-size: 15px;
+      letter-spacing: 0.3px;
+      transition: background 0.2s, transform 0.2s;
+    }
+
+    .btn-primary:hover { background: #2d5340; transform: translateY(-1px); }
+
+    .btn-secondary {
+      display: inline-block;
+      padding: 16px 32px;
+      border: 2px solid var(--green);
+      color: var(--green);
+      text-decoration: none;
+      border-radius: 4px;
+      font-weight: 600;
+      font-size: 15px;
+      transition: all 0.2s;
+    }
+
+    .btn-secondary:hover { background: var(--green); color: var(--white); }
+
+    .hero-image {
+      display: flex;
+      justify-content: center;
+      position: relative;
+    }
+
+    .hero-image img {
+      width: 100%;
+      max-width: 480px;
+      height: auto;
+      object-fit: contain;
+      border-radius: 8px;
+      box-shadow: 0 40px 80px rgba(0,0,0,0.15);
+    }
+
+    .hero-stat {
+      position: absolute;
+      bottom: -20px;
+      left: -20px;
+      background: var(--white);
+      border-radius: 8px;
+      padding: 20px 28px;
+      box-shadow: 0 20px 50px rgba(0,0,0,0.12);
+      text-align: center;
+    }
+
+    .hero-stat-num {
+      font-family: 'Playfair Display', serif;
+      font-size: 42px;
+      color: var(--green);
+      line-height: 1;
+    }
+
+    .hero-stat-label {
+      font-size: 12px;
+      color: var(--mid);
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+      margin-top: 4px;
+    }
+
+    /* TRUTH SECTION */
+    .truth {
+      padding: 100px 48px;
+      max-width: 900px;
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    .section-label {
+      font-size: 12px;
+      font-weight: 600;
+      letter-spacing: 2.5px;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: 16px;
+    }
+
+    .section-title {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(28px, 3vw, 42px);
+      color: var(--dark);
+      margin-bottom: 28px;
+      line-height: 1.25;
+    }
+
+    .truth-body {
+      font-size: 18px;
+      color: var(--mid);
+      line-height: 1.85;
+      font-weight: 300;
+      max-width: 720px;
+      margin: 0 auto;
+    }
+
+    .truth-body strong {
+      color: var(--dark);
+      font-weight: 600;
+    }
+
+    /* TIMELINE */
+    .timeline-section {
+      background: var(--green);
+      padding: 100px 48px;
+      color: var(--white);
+    }
+
+    .timeline-section .section-label { color: var(--gold); }
+    .timeline-section .section-title { color: var(--white); text-align: center; margin-bottom: 60px; }
+
+    .timeline {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 40px;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+
+    .timeline-item { text-align: center; }
+
+    .timeline-num {
+      font-family: 'Playfair Display', serif;
+      font-size: 52px;
+      color: var(--gold);
+      line-height: 1;
+      margin-bottom: 10px;
+    }
+
+    .timeline-desc {
+      font-size: 15px;
+      color: rgba(255,255,255,0.85);
+      line-height: 1.6;
+    }
+
+    /* BEFORE/AFTER */
+    .transformation {
+      padding: 100px 48px;
+      background: var(--light);
+    }
+
+    .transformation .section-label,
+    .transformation .section-title { text-align: center; }
+
+    .transformation .section-title { margin-bottom: 16px; }
+
+    .transformation-sub {
+      text-align: center;
+      color: var(--mid);
+      font-size: 16px;
+      margin-bottom: 60px;
+      font-weight: 300;
+    }
+
+    .photos-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 24px;
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+    .photo-card { position: relative; border-radius: 8px; overflow: hidden; }
+
+    .photo-card img {
+      width: 100%;
+      height: 420px;
+      object-fit: contain;
+      background: #f0ece6;
+      display: block;
+      transition: transform 0.4s;
+    }
+
+    .photo-card:hover img { transform: scale(1.02); }
+
+    .photo-label {
+      position: absolute;
+      bottom: 0; left: 0; right: 0;
+      padding: 16px 20px;
+      background: linear-gradient(transparent, rgba(0,0,0,0.7));
+      color: var(--white);
+      font-size: 14px;
+      font-weight: 600;
+      letter-spacing: 0.5px;
+    }
+
+    /* MESSAGE */
+    .message {
+      padding: 100px 48px;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    .message-quote {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(22px, 2.5vw, 34px);
+      color: var(--dark);
+      line-height: 1.5;
+      border-left: 4px solid var(--gold);
+      padding-left: 32px;
+      margin-bottom: 40px;
+    }
+
+    .message-body {
+      font-size: 17px;
+      color: var(--mid);
+      line-height: 1.85;
+      font-weight: 300;
+    }
+
+    .message-body p { margin-bottom: 20px; }
+
+    /* FOLLOW */
+    .follow {
+      background: var(--light);
+      padding: 100px 48px;
+      text-align: center;
+    }
+
+    .follow .section-title { margin-bottom: 16px; }
+
+    .follow-sub {
+      color: var(--mid);
+      font-size: 17px;
+      margin-bottom: 48px;
+      font-weight: 300;
+    }
+
+    .social-grid {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .social-card {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      padding: 18px 28px;
+      background: var(--white);
+      border-radius: 8px;
+      text-decoration: none;
+      color: var(--dark);
+      font-weight: 600;
+      font-size: 15px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+      transition: transform 0.2s, box-shadow 0.2s;
+      border: 1px solid rgba(0,0,0,0.06);
+    }
+
+    .social-card:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 12px 40px rgba(0,0,0,0.14);
+    }
+
+    .social-icon { font-size: 22px; }
+
+    /* FOOTER */
+    footer {
+      padding: 40px 48px;
+      text-align: center;
+      color: var(--mid);
+      font-size: 13px;
+      border-top: 1px solid rgba(0,0,0,0.08);
+    }
+
+    footer a { color: var(--green); text-decoration: none; }
+
+    /* RESPONSIVE */
+    @media (max-width: 768px) {
+      nav { padding: 16px 24px; }
+      .nav-links { display: none; }
+      .hero { grid-template-columns: 1fr; padding: 100px 24px 60px; text-align: center; }
+      .hero-image { order: -1; }
+      .hero-image img { height: 400px; }
+      .hero-cta { justify-content: center; }
+      .hero-stat { bottom: -16px; left: 10px; }
+      .truth, .message { padding: 60px 24px; }
+      .timeline-section, .transformation, .follow { padding: 60px 24px; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav>
+    <a class="nav-logo" href="#">Jodi Isaacson</a>
+    <ul class="nav-links">
+      <li><a href="#story">My Story</a></li>
+      <li><a href="#transformation">Transformation</a></li>
+      <li><a href="#follow">Follow Along</a></li>
+    </ul>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-text">
+      <div class="hero-eyebrow">Certified Holistic Nutritionist · West Palm Beach, FL</div>
+      <h1 class="hero-headline">
+        I lost 120 lbs,<br/>
+        gained 90 back,<br/>
+        and lost <span>215 total.</span>
+      </h1>
+      <p class="hero-sub">
+        Certified Holistic Nutritionist. At 65, I proved it's never too late. I started with two minutes of movement. That's all it took.
+      </p>
+      <div class="hero-cta">
+        <a href="#story" class="btn-primary">Read My Story</a>
+        <a href="#follow" class="btn-secondary">Follow Along</a>
+      </div>
+    </div>
+    <div class="hero-image">
+      <img src="images/headshot.jpg" alt="Jodi Isaacson — Essentia Living" />
+      <div class="hero-stat">
+        <div class="hero-stat-num">215</div>
+        <div class="hero-stat-label">Pounds Lost</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TRUTH -->
+  <section class="truth" id="story">
+    <div class="section-label">The Real Story</div>
+    <h2 class="section-title">This isn't a perfect transformation story. It's a real one.</h2>
+    <p class="truth-body">
+      I didn't lose 215 pounds in a straight line. I lost 120, hit a plateau that lasted a year, and figured out how to break through it. Then my husband almost died — and while I was driving back and forth to the hospital caring for him and our seven foster children, I gained 90 pounds back.<br/><br/>
+      <strong>I started over. Again.</strong><br/><br/>
+      It started with two minutes of movement. That's all I could do. Two minutes, then I had to sit down. But I kept showing up. Two minutes became five. Five became ten. One day at a time became 215 pounds released.<br/><br/>
+      Through raw whole food plant-based nutrition I reversed Type 2 diabetes, chronic anemia, and transformed my health completely. At 65 I feel more alive than I did at 45. The war with my body is over. And yours can be too.
+    </p>
+  </section>
+
+  <!-- TIMELINE -->
+  <section class="timeline-section">
+    <div class="section-label" style="text-align:center;">The Journey</div>
+    <h2 class="section-title">Real numbers. Real life.</h2>
+    <div class="timeline">
+      <div class="timeline-item">
+        <div class="timeline-num">120</div>
+        <div class="timeline-desc">Pounds lost in the first phase — through whole food plant-based eating</div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-num">1 yr</div>
+        <div class="timeline-desc">Plateau — learned to break through it and keep going</div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-num">90</div>
+        <div class="timeline-desc">Pounds regained when life hit hard — and that's okay</div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-num">215</div>
+        <div class="timeline-desc">Total pounds lost — because I started over and finished</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TRANSFORMATION -->
+  <section class="transformation" id="transformation">
+    <div class="section-label">The Proof</div>
+    <h2 class="section-title">Before & After</h2>
+    <p class="transformation-sub">Real photos. No filters. No tricks.</p>
+    <div class="photos-grid">
+      <div class="photo-card">
+        <img src="images/before1.jpg" alt="Jodi before transformation" />
+        <div class="photo-label">Before</div>
+      </div>
+      <div class="photo-card">
+        <img src="images/before295.jpg" alt="Jodi during journey" />
+        <div class="photo-label">During the Journey</div>
+      </div>
+      <div class="photo-card">
+        <img src="images/after1.jpg" alt="Jodi after 215 pounds lost" />
+        <div class="photo-label">215 Lbs Lost · Age 65</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- MESSAGE -->
+  <section class="message">
+    <blockquote class="message-quote">
+      "Your cells don't care how old you are. They're ready to heal the moment you give them what they need. The war is over. You can start again."
+    </blockquote>
+    <div class="message-body">
+      <p>I built Essentia Living because I needed it to exist. A place for real people — not just women, anyone — who want to get healthy, feel strong, and live their fullest life. People who have tried and failed and tried again. People who are dealing with real life while trying to take care of themselves.</p>
+      <p>I'm documenting everything — the food, the workouts, the mindset, the hard days, the victories. Including an upcoming consultation in Dallas that I'm both terrified and excited about. You'll see all of it.</p>
+      <p>This is not about perfection. It's about what's possible when you refuse to give up on yourself.</p>
+    </div>
+  </section>
+
+
+  <!-- SPARK PROTOCOL FREE GUIDE -->
+  <section style="background:#3d6b4f; padding:80px 48px; text-align:center; color:#fff;">
+    <div style="max-width:700px; margin:0 auto;">
+      <div style="font-size:12px; font-weight:600; letter-spacing:2.5px; text-transform:uppercase; color:#c9a84c; margin-bottom:16px;">Free Gift</div>
+      <h2 style="font-family:'Playfair Display',serif; font-size:clamp(28px,3vw,42px); color:#fff; margin-bottom:20px; line-height:1.25;">The Spark Protocol</h2>
+      <p style="font-size:18px; color:rgba(255,255,255,0.85); line-height:1.7; margin-bottom:32px; font-weight:300;">My complete guide to reclaiming your vitality — the exact approach I used to release 215 pounds. Includes my real story, the Body &middot; Mind &middot; Spirit framework, and the recipes I eat every day.</p>
+      <a href="mailto:hello@jodiisaacson.com?subject=Send me the Spark Protocol" style="display:inline-block; padding:18px 40px; background:#c9a84c; color:#1a1a1a; text-decoration:none; border-radius:4px; font-weight:700; font-size:16px;">Get the Free Guide &rarr;</a>
+      <p style="margin-top:16px; font-size:13px; color:rgba(255,255,255,0.6);">No spam. Just the guide.</p>
+    </div>
+  </section>
+
+  <!-- FOLLOW -->
+  <section class="follow" id="follow">
+    <div class="section-label">Follow Along</div>
+    <h2 class="section-title">Join the journey</h2>
+    <p class="follow-sub">I'm documenting everything — the wins, the setbacks, the real stuff. Follow along on your platform of choice.</p>
+    <div class="social-grid">
+      <a class="social-card" href="https://youtube.com/@thejodiisaacson" target="_blank" rel="noopener">
+        <span class="social-icon">▶</span>
+        <span>YouTube</span>
+      </a>
+      <a class="social-card" href="https://instagram.com/thejodiisaacson" target="_blank" rel="noopener">
+        <span class="social-icon">◈</span>
+        <span>Instagram</span>
+      </a>
+      <a class="social-card" href="https://tiktok.com/@thejodiisaacson" target="_blank" rel="noopener">
+        <span class="social-icon">♪</span>
+        <span>TikTok</span>
+      </a>
+      <a class="social-card" href="https://x.com/thejodiisaacson" target="_blank" rel="noopener">
+        <span class="social-icon">✕</span>
+        <span>X / Twitter</span>
+      </a>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>© 2026 Jodi Isaacson · Certified Holistic Nutritionist · West Palm Beach, FL · <a href="mailto:hello@jodiisaacson.com">hello@jodiisaacson.com</a></p>
+  </footer>
+
+</body>
+</html>
