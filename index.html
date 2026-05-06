@@ -402,6 +402,9 @@
       .hero-stat { bottom: -16px; left: 10px; }
       .truth, .message { padding: 60px 24px; }
       .timeline-section, .transformation, .follow { padding: 60px 24px; }
+      #spark { padding: 60px 24px !important; }
+      #spark-form { grid-template-columns: 1fr !important; }
+      #spark-form button { width: 100%; }
     }
   </style>
 </head>
@@ -534,13 +537,21 @@
   </section>
 
   <!-- SPARK PROTOCOL FREE GUIDE -->
-  <section style="background:#3d6b4f; padding:80px 48px; text-align:center; color:#fff;">
-    <div style="max-width:700px; margin:0 auto;">
+  <section id="spark" style="background:#3d6b4f; padding:80px 48px; text-align:center; color:#fff;">
+    <div style="max-width:760px; margin:0 auto;">
       <div style="font-size:12px; font-weight:600; letter-spacing:2.5px; text-transform:uppercase; color:#c9a84c; margin-bottom:16px;">Free Gift</div>
       <h2 style="font-family:'Playfair Display',serif; font-size:clamp(28px,3vw,42px); color:#fff; margin-bottom:20px; line-height:1.25;">The Spark Protocol</h2>
-      <p style="font-size:18px; color:rgba(255,255,255,0.85); line-height:1.7; margin-bottom:32px; font-weight:300;">My complete guide to reclaiming your vitality — the exact approach I used to release 215 pounds. Includes my real story, the Body &middot; Mind &middot; Spirit framework, and the recipes I eat every day.</p>
-      <a href="mailto:hello@jodiisaacson.com?subject=Send me the Spark Protocol" style="display:inline-block; padding:18px 40px; background:#c9a84c; color:#1a1a1a; text-decoration:none; border-radius:4px; font-weight:700; font-size:16px;">Get the Free Guide &rarr;</a>
-      <p style="margin-top:16px; font-size:13px; color:rgba(255,255,255,0.6);">No spam. Just the guide.</p>
+      <p style="font-size:18px; color:rgba(255,255,255,0.85); line-height:1.7; margin-bottom:28px; font-weight:300;">My complete guide to reclaiming your vitality — the exact approach I used to release 215 pounds. Includes my real story, the Body &middot; Mind &middot; Spirit framework, and the recipes I eat every day.</p>
+
+      <form id="spark-form" action="https://formsubmit.co/ajax/hello@jodiisaacson.com" method="POST" style="display:grid; grid-template-columns:1fr auto; gap:12px; max-width:560px; margin:0 auto; text-align:left;">
+        <input type="hidden" name="_subject" value="New Spark Protocol request from jodiisaacson.com" />
+        <input type="hidden" name="_template" value="table" />
+        <input type="hidden" name="_captcha" value="false" />
+        <input type="hidden" name="source" value="Spark Protocol website opt-in" />
+        <input type="email" name="email" aria-label="Email address" placeholder="Enter your email" required style="width:100%; padding:18px 18px; border:0; border-radius:4px; font:inherit; font-size:16px; color:#1a1a1a; background:#fff;" />
+        <button type="submit" style="padding:18px 30px; background:#c9a84c; color:#1a1a1a; border:0; border-radius:4px; font-weight:700; font-size:16px; cursor:pointer; white-space:nowrap;">Get the Free Guide &rarr;</button>
+        <p id="spark-message" aria-live="polite" style="grid-column:1 / -1; min-height:20px; font-size:13px; color:rgba(255,255,255,0.72); text-align:center; margin-top:4px;">No spam. Just the guide. You'll get instant access after you submit.</p>
+      </form>
     </div>
   </section>
 
@@ -574,5 +585,33 @@
     <p>© 2026 Jodi Isaacson · Certified Holistic Nutritionist · West Palm Beach, FL · <a href="mailto:hello@jodiisaacson.com">hello@jodiisaacson.com</a></p>
   </footer>
 
+
+  <script>
+    const sparkForm = document.getElementById('spark-form');
+    const sparkMessage = document.getElementById('spark-message');
+
+    if (sparkForm) {
+      sparkForm.addEventListener('submit', async (event) => {
+        event.preventDefault();
+        const submitButton = sparkForm.querySelector('button[type="submit"]');
+        const formData = new FormData(sparkForm);
+        submitButton.disabled = true;
+        submitButton.textContent = 'Sending...';
+        sparkMessage.textContent = 'Saving your email and opening the guide...';
+
+        try {
+          await fetch(sparkForm.action, {
+            method: 'POST',
+            body: formData,
+            headers: { 'Accept': 'application/json' }
+          });
+        } catch (error) {
+          console.warn('Spark Protocol lead notification failed:', error);
+        } finally {
+          window.location.href = '/spark-thank-you.html';
+        }
+      });
+    }
+  </script>
 </body>
 </html>
