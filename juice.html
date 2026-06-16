@@ -1,0 +1,226 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>The Healing Juice Connection | Jodi Isaacson</title>
+  <meta name="description" content="The Healing Juice Connection is Jodi Isaacson's $27 cold-pressed juice guide with 38 recipes for people over 50 who want food that feels like a way back in.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&family=Playfair+Display:wght@700;800&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --cream: #f9f6f2;
+      --warm: #f7eddd;
+      --sage: #a8bba2;
+      --ink: #1a1a1a;
+      --gold: #c9a84c;
+      --terracotta: #E07A5F;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: var(--cream);
+      color: var(--ink);
+      font-family: Lato, Arial, sans-serif;
+      line-height: 1.55;
+    }
+    .topbar {
+      background: var(--ink);
+      color: var(--cream);
+      text-align: center;
+      padding: 10px 18px;
+      font-size: 14px;
+      letter-spacing: .04em;
+    }
+    .wrap { max-width: 980px; margin: 0 auto; padding: 0 20px; }
+    .hero {
+      display: grid;
+      grid-template-columns: 1.05fr .95fr;
+      gap: 42px;
+      align-items: center;
+      padding: 58px 0 42px;
+    }
+    .eyebrow {
+      color: #6c755f;
+      font-weight: 900;
+      text-transform: uppercase;
+      letter-spacing: .12em;
+      font-size: 13px;
+      margin-bottom: 16px;
+    }
+    h1, h2, h3 { font-family: "Playfair Display", Georgia, serif; line-height: 1.05; margin: 0; }
+    h1 { font-size: clamp(42px, 7vw, 76px); letter-spacing: -.02em; line-height: 1.08; }
+    h2 { font-size: clamp(32px, 4.5vw, 52px); margin-bottom: 22px; }
+    h3 { font-size: 27px; margin-bottom: 10px; }
+    .sub { font-size: 21px; margin: 24px 0; max-width: 620px; }
+    .proof-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin: 26px 0;
+    }
+    .pill {
+      border: 1px solid rgba(26,26,26,.14);
+      background: rgba(255,255,255,.55);
+      border-radius: 999px;
+      padding: 10px 14px;
+      font-weight: 800;
+      font-size: 14px;
+    }
+    .hero-card {
+      background: var(--warm);
+      border: 1px solid rgba(26,26,26,.12);
+      border-radius: 26px;
+      padding: 20px;
+      box-shadow: 0 24px 60px rgba(26,26,26,.10);
+    }
+    .hero-card img { width: 100%; border-radius: 20px; display: block; }
+    .cta {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      background: var(--ink);
+      color: white;
+      text-decoration: none;
+      padding: 17px 24px;
+      border-radius: 999px;
+      font-weight: 900;
+      min-width: 245px;
+      box-shadow: 0 12px 30px rgba(26,26,26,.18);
+    }
+    .secondary { color: #4f5947; font-size: 14px; margin-top: 12px; }
+    section { padding: 50px 0; }
+    .article {
+      background: white;
+      border-radius: 30px;
+      border: 1px solid rgba(26,26,26,.10);
+      padding: clamp(24px, 5vw, 56px);
+    }
+    .reason {
+      display: grid;
+      grid-template-columns: 58px 1fr;
+      gap: 20px;
+      padding: 26px 0;
+      border-top: 1px solid rgba(26,26,26,.10);
+    }
+    .num {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      background: var(--sage);
+      display: grid;
+      place-items: center;
+      font-weight: 900;
+      color: var(--ink);
+    }
+    .offer {
+      background: var(--ink);
+      color: var(--cream);
+      border-radius: 30px;
+      padding: clamp(28px, 5vw, 54px);
+      display: grid;
+      grid-template-columns: 1fr .9fr;
+      gap: 34px;
+      align-items: center;
+    }
+    .offer ul { padding-left: 20px; }
+    .price { font-family: "Playfair Display"; font-size: 74px; line-height: 1; margin: 14px 0; }
+    .offer .cta { background: var(--gold); color: var(--ink); }
+    .note {
+      background: var(--warm);
+      color: var(--ink);
+      border-left: 6px solid var(--gold);
+      padding: 22px;
+      border-radius: 16px;
+      margin-top: 24px;
+    }
+    .footer { padding: 32px 0 46px; color: #5b5b5b; font-size: 14px; }
+    @media (max-width: 800px) {
+      .hero, .offer { grid-template-columns: 1fr; }
+      .reason { grid-template-columns: 1fr; gap: 12px; }
+      .num { width: 44px; height: 44px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="topbar">The Healing Juice Connection, instant PDF download, $27</div>
+  <main class="wrap">
+    <section class="hero">
+      <div>
+        <div class="eyebrow">For people over 50 who are tired of starting over hungry</div>
+        <h1>6 reasons this juice guide changed everything after 60</h1>
+        <p class="sub">38 cold-pressed juice and blend recipes from the kitchen of a woman who released 215 pounds, reversed Type 2 diabetes and started again when most people thought it was too late.</p>
+        <div class="proof-row">
+          <span class="pill">38 recipes</span>
+          <span class="pill">62-page PDF</span>
+          <span class="pill">Instant download</span>
+          <span class="pill">Cold, fresh, real food</span>
+        </div>
+        <a class="cta" href="https://buy.stripe.com/fZu5kC20i6NM8lX0WA0x200">Get instant access for $27</a>
+        <p class="secondary">Secure checkout through Stripe. Download access after purchase.</p>
+      </div>
+      <div class="hero-card">
+        <img src="images/juice-book-cover-web.jpg" alt="The Healing Juice Connection guide by Jodi Isaacson">
+      </div>
+    </section>
+
+    <section>
+      <div class="article">
+        <h2>Why this is different from another cleanse</h2>
+        <p>Yeah, Jodi has done the diet loop. Lose, regain, shame, try again. This guide came from the part after that, when food stopped being punishment and started being information.</p>
+
+        <div class="reason">
+          <div class="num">1</div>
+          <div><h3>These are daily recipes, not a three-day punishment plan.</h3><p>Most juice books sell a reset that ends the second real life comes back. These recipes are built for repeatable days: green elixirs, thicker blends, refreshers, mini shots and coolers that fit into an actual kitchen.</p></div>
+        </div>
+        <div class="reason">
+          <div class="num">2</div>
+          <div><h3>The recipes came from someone who has lived the regain.</h3><p>Jodi lost 120 pounds, regained 90 when her husband got sick and started again after 60. She did not write this from a perfect before-and-after. She wrote it from the middle of real life.</p></div>
+        </div>
+        <div class="reason">
+          <div class="num">3</div>
+          <div><h3>It makes raw food feel less extreme.</h3><p>Cold-pressed juice can sound intense until you see it as one glass, one morning and one way to give your body something living before the old loop starts talking.</p></div>
+        </div>
+        <div class="reason">
+          <div class="num">4</div>
+          <div><h3>It explains enough without sounding like a textbook.</h3><p>You will see why certain ingredients show up, how to store juice and what tools help. Plain language. No lecture. No pretending everyone has a perfect kitchen.</p></div>
+        </div>
+        <div class="reason">
+          <div class="num">5</div>
+          <div><h3>It gives you a way in when a full life change feels too much.</h3><p>A whole new food life can feel huge. A glass of juice is smaller. That matters. Jodi started movement with two minutes. Food can start the same way.</p></div>
+        </div>
+        <div class="reason">
+          <div class="num">6</div>
+          <div><h3>It is rooted in proof, not wellness noise.</h3><p>Jodi released 215 pounds, reversed Type 2 diabetes and watched her biological age drop from 73 to 66 in one year. Food was part of that story every single day.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="offer">
+        <div>
+          <h2>What you get</h2>
+          <ul>
+            <li>The Healing Juice Connection, 62-page digital guide</li>
+            <li>38 juice and blend recipes</li>
+            <li>Green Elixirs, Thick Juices, Refreshers, Mini Shots and Coolers</li>
+            <li>Kitchen essentials and storage guide</li>
+            <li>Instant PDF download</li>
+          </ul>
+          <div class="note">No fake cleanse promise. No shame. Just one practical way to bring living food back into your day.</div>
+        </div>
+        <div>
+          <div class="eyebrow" style="color:#f7eddd">Instant access</div>
+          <div class="price">$27</div>
+          <a class="cta" href="https://buy.stripe.com/fZu5kC20i6NM8lX0WA0x200">Buy the guide</a>
+          <p class="secondary" style="color:#f7eddd">If this does not feel useful after you open it, reply to your receipt email. Keep it simple.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="wrap footer">
+    <p>Jodi Isaacson, Certified Holistic Nutritionist. @thejodiisaacson everywhere.</p>
+  </footer>
+</body>
+</html>
