@@ -3,615 +3,1196 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Jodi Isaacson — I Lost 215 Pounds at 65. Here's the Truth.</title>
-  <meta name="description" content="Certified Holistic Nutritionist. Lost 215 lbs at 65 through raw plant-based living. It's never too late to start again." />
+
+  <!-- ===== SEO ===== -->
+  <title>Jodi Isaacson | Lose Weight After 40 Without Dieting</title>
+  <meta name="description" content="I dieted up to 350 lbs, then quit dieting and lost over 210. I help women over 40 lose weight by nourishing their bodies with whole food, not starving them." />
+  <link rel="canonical" href="https://jodiisaacson.com/" />
+  <meta name="author" content="Jodi Isaacson" />
+  <meta name="robots" content="index, follow" />
+  <meta name="theme-color" content="#0c1610" />
+
+  <!-- Open Graph (Facebook, LinkedIn, etc.) -->
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Jodi Isaacson" />
+  <meta property="og:title" content="I quit dieting at 350 lbs and lost over 210 pounds" />
+  <meta property="og:description" content="Anti-diet weight loss for women over 40. Nourish your body with whole food instead of starving it. Certified Holistic Nutritionist Jodi Isaacson shows you how." />
+  <meta property="og:url" content="https://jodiisaacson.com/" />
+  <meta property="og:image" content="https://jodiisaacson.com/images/og-image.jpg" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content="Jodi Isaacson walking outdoors at 65" />
+
+  <!-- Twitter / X card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="I quit dieting at 350 lbs and lost over 210 pounds" />
+  <meta name="twitter:description" content="Anti-diet weight loss for women over 40. Nourish your body with whole food instead of starving it." />
+  <meta name="twitter:image" content="https://jodiisaacson.com/images/og-image.jpg" />
+  <meta name="twitter:site" content="@thejodiisaacson" />
+
+  <!-- Structured data: who Jodi is (helps Google's knowledge graph) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Jodi Isaacson",
+    "url": "https://jodiisaacson.com/",
+    "image": "https://jodiisaacson.com/images/og-image.jpg",
+    "jobTitle": "Certified Holistic Nutritionist",
+    "description": "Anti-diet weight loss coach for women over 40. Lost over 210 pounds by quitting dieting and eating whole food, mostly raw.",
+    "homeLocation": { "@type": "Place", "name": "West Palm Beach, Florida" },
+    "sameAs": [
+      "https://youtube.com/@thejodiisaacson",
+      "https://instagram.com/thejodiisaacson",
+      "https://tiktok.com/@thejodiisaacson",
+      "https://x.com/thejodiisaacson"
+    ]
+  }
+  </script>
+
   <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Inter:wght@300;400;500&display=swap" rel="stylesheet" />
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
     :root {
-      --green: #3d6b4f;
-      --green-light: #e8f0eb;
-      --gold: #c9a84c;
-      --dark: #1a1a1a;
-      --mid: #4a4a4a;
-      --light: #f8f6f2;
-      --white: #ffffff;
+      --stage:  #0c1610;
+      --cream:  #f6f1e8;
+      --gold:   #d4b25e;
+      --green:  #a7d2b2;
+      --muted:  rgba(246,241,232,0.80);
     }
 
     html { scroll-behavior: smooth; }
-
     body {
+      background: var(--stage);
+      color: var(--cream);
       font-family: 'Inter', sans-serif;
-      color: var(--dark);
-      background: var(--white);
-      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+      overflow-x: hidden;
     }
 
-    /* NAV */
-    nav {
-      position: fixed;
-      top: 0; left: 0; right: 0;
-      z-index: 100;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 18px 48px;
-      background: rgba(255,255,255,0.95);
-      backdrop-filter: blur(8px);
-      border-bottom: 1px solid rgba(0,0,0,0.06);
-    }
-
-    .nav-logo {
-      font-family: 'Playfair Display', serif;
-      font-size: 22px;
-      color: var(--green);
-      text-decoration: none;
-      letter-spacing: 0.5px;
-    }
-
-    .nav-links {
-      display: flex;
-      gap: 32px;
-      list-style: none;
-    }
-
-    .nav-links a {
-      font-size: 14px;
-      color: var(--mid);
-      text-decoration: none;
-      font-weight: 500;
-      letter-spacing: 0.3px;
-      transition: color 0.2s;
-    }
-
-    .nav-links a:hover { color: var(--green); }
-
-    /* HERO */
+    /* ---------- HERO STAGE (exactly one screen) ---------- */
     .hero {
-      min-height: 100vh;
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      align-items: center;
-      padding: 100px 48px 60px;
-      gap: 60px;
-      background: var(--light);
-    }
-
-    .hero-text { max-width: 560px; }
-
-    .hero-eyebrow {
-      font-size: 13px;
-      font-weight: 600;
-      letter-spacing: 2px;
-      text-transform: uppercase;
-      color: var(--gold);
-      margin-bottom: 20px;
-    }
-
-    .hero-headline {
-      font-family: 'Playfair Display', serif;
-      font-size: clamp(36px, 4vw, 58px);
-      line-height: 1.15;
-      color: var(--dark);
-      margin-bottom: 24px;
-    }
-
-    .hero-headline span { color: var(--green); }
-
-    .hero-sub {
-      font-size: 18px;
-      color: var(--mid);
-      line-height: 1.7;
-      margin-bottom: 36px;
-      font-weight: 300;
-    }
-
-    .hero-cta {
-      display: flex;
-      gap: 16px;
-      flex-wrap: wrap;
-    }
-
-    .btn-primary {
-      display: inline-block;
-      padding: 16px 32px;
-      background: var(--green);
-      color: var(--white);
-      text-decoration: none;
-      border-radius: 4px;
-      font-weight: 600;
-      font-size: 15px;
-      letter-spacing: 0.3px;
-      transition: background 0.2s, transform 0.2s;
-    }
-
-    .btn-primary:hover { background: #2d5340; transform: translateY(-1px); }
-
-    .btn-secondary {
-      display: inline-block;
-      padding: 16px 32px;
-      border: 2px solid var(--green);
-      color: var(--green);
-      text-decoration: none;
-      border-radius: 4px;
-      font-weight: 600;
-      font-size: 15px;
-      transition: all 0.2s;
-    }
-
-    .btn-secondary:hover { background: var(--green); color: var(--white); }
-
-    .hero-image {
-      display: flex;
-      justify-content: center;
       position: relative;
-    }
-
-    .hero-image img {
       width: 100%;
-      max-width: 480px;
-      height: auto;
-      object-fit: contain;
-      border-radius: 8px;
-      box-shadow: 0 40px 80px rgba(0,0,0,0.15);
-    }
-
-    .hero-stat {
-      position: absolute;
-      bottom: -20px;
-      left: -20px;
-      background: var(--white);
-      border-radius: 8px;
-      padding: 20px 28px;
-      box-shadow: 0 20px 50px rgba(0,0,0,0.12);
-      text-align: center;
-    }
-
-    .hero-stat-num {
-      font-family: 'Playfair Display', serif;
-      font-size: 42px;
-      color: var(--green);
-      line-height: 1;
-    }
-
-    .hero-stat-label {
-      font-size: 12px;
-      color: var(--mid);
-      text-transform: uppercase;
-      letter-spacing: 1.5px;
-      margin-top: 4px;
-    }
-
-    /* TRUTH SECTION */
-    .truth {
-      padding: 100px 48px;
-      max-width: 900px;
-      margin: 0 auto;
-      text-align: center;
-    }
-
-    .section-label {
-      font-size: 12px;
-      font-weight: 600;
-      letter-spacing: 2.5px;
-      text-transform: uppercase;
-      color: var(--gold);
-      margin-bottom: 16px;
-    }
-
-    .section-title {
-      font-family: 'Playfair Display', serif;
-      font-size: clamp(28px, 3vw, 42px);
-      color: var(--dark);
-      margin-bottom: 28px;
-      line-height: 1.25;
-    }
-
-    .truth-body {
-      font-size: 18px;
-      color: var(--mid);
-      line-height: 1.85;
-      font-weight: 300;
-      max-width: 720px;
-      margin: 0 auto;
-    }
-
-    .truth-body strong {
-      color: var(--dark);
-      font-weight: 600;
-    }
-
-    /* TIMELINE */
-    .timeline-section {
-      background: var(--green);
-      padding: 100px 48px;
-      color: var(--white);
-    }
-
-    .timeline-section .section-label { color: var(--gold); }
-    .timeline-section .section-title { color: var(--white); text-align: center; margin-bottom: 60px; }
-
-    .timeline {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-      gap: 40px;
-      max-width: 1000px;
-      margin: 0 auto;
-    }
-
-    .timeline-item { text-align: center; }
-
-    .timeline-num {
-      font-family: 'Playfair Display', serif;
-      font-size: 52px;
-      color: var(--gold);
-      line-height: 1;
-      margin-bottom: 10px;
-    }
-
-    .timeline-desc {
-      font-size: 15px;
-      color: rgba(255,255,255,0.85);
-      line-height: 1.6;
-    }
-
-    /* BEFORE/AFTER */
-    .transformation {
-      padding: 100px 48px;
-      background: var(--light);
-    }
-
-    .transformation .section-label,
-    .transformation .section-title { text-align: center; }
-
-    .transformation .section-title { margin-bottom: 16px; }
-
-    .transformation-sub {
-      text-align: center;
-      color: var(--mid);
-      font-size: 16px;
-      margin-bottom: 60px;
-      font-weight: 300;
-    }
-
-    .photos-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-      gap: 24px;
-      max-width: 900px;
-      margin: 0 auto;
-    }
-
-    .photo-card { position: relative; border-radius: 8px; overflow: hidden; }
-
-    .photo-card img {
-      width: 100%;
-      height: 420px;
-      object-fit: contain;
-      background: #f0ece6;
-      display: block;
-      transition: transform 0.4s;
-    }
-
-    .photo-card:hover img { transform: scale(1.02); }
-
-    .photo-label {
-      position: absolute;
-      bottom: 0; left: 0; right: 0;
-      padding: 16px 20px;
-      background: linear-gradient(transparent, rgba(0,0,0,0.7));
-      color: var(--white);
-      font-size: 14px;
-      font-weight: 600;
-      letter-spacing: 0.5px;
-    }
-
-    /* MESSAGE */
-    .message {
-      padding: 100px 48px;
-      max-width: 800px;
-      margin: 0 auto;
-    }
-
-    .message-quote {
-      font-family: 'Playfair Display', serif;
-      font-size: clamp(22px, 2.5vw, 34px);
-      color: var(--dark);
-      line-height: 1.5;
-      border-left: 4px solid var(--gold);
-      padding-left: 32px;
-      margin-bottom: 40px;
-    }
-
-    .message-body {
-      font-size: 17px;
-      color: var(--mid);
-      line-height: 1.85;
-      font-weight: 300;
-    }
-
-    .message-body p { margin-bottom: 20px; }
-
-    /* FOLLOW */
-    .follow {
-      background: var(--light);
-      padding: 100px 48px;
-      text-align: center;
-    }
-
-    .follow .section-title { margin-bottom: 16px; }
-
-    .follow-sub {
-      color: var(--mid);
-      font-size: 17px;
-      margin-bottom: 48px;
-      font-weight: 300;
-    }
-
-    .social-grid {
+      height: 100vh; height: 100svh;
+      overflow: hidden;
       display: flex;
-      justify-content: center;
-      gap: 20px;
-      flex-wrap: wrap;
+      align-items: flex-end;       /* mobile: words sit below the photo */
+      isolation: isolate;
     }
 
-    .social-card {
+    /* Layer 1 — blurred ambient glow of the same photo */
+    .hero__bg {
+      position: absolute; inset: 0; z-index: -4;
+      width: 100%; height: 100%;
+      object-fit: cover; object-position: center;
+      filter: blur(48px) brightness(0.42) saturate(1.2);
+      transform: scale(1.2);
+      animation: glowdrift 30s ease-in-out infinite alternate;
+    }
+    @keyframes glowdrift { from { transform: scale(1.2); } to { transform: scale(1.32); } }
+
+    .hero__tint {
+      position: absolute; inset: 0; z-index: -3;
+      background: linear-gradient(0deg, rgba(12,22,16,0.62) 0%, rgba(12,22,16,0.18) 55%, rgba(12,22,16,0.45) 100%);
+    }
+
+    /* Layer 2 — the FULL photo, never cropped; on mobile it takes the top, leaving room below */
+    .hero__photo {
+      position: absolute; top: 0; left: 0; right: 0; z-index: -2;
+      width: 100%; height: 60svh;
+      object-fit: contain;
+      object-position: 50% 50%;
+      filter: drop-shadow(0 22px 50px rgba(0,0,0,0.5));
+      animation: floaty 11s ease-in-out infinite alternate;
+    }
+    @keyframes floaty { from { transform: translateY(0); } to { transform: translateY(-0.8%); } }
+
+    .hero__scrim {
+      position: absolute; inset: 0; z-index: -1; pointer-events: none;
+      background: linear-gradient(0deg, rgba(12,22,16,0.82) 0%, rgba(12,22,16,0.30) 26%, rgba(12,22,16,0) 48%);
+    }
+
+    /* ---------- WORDMARK ---------- */
+    /* soft dark strip across the very top so the name always reads */
+    .hero__topscrim {
+      position: absolute; top: 0; left: 0; right: 0; height: 110px; z-index: 1;
+      background: linear-gradient(180deg, rgba(8,14,11,0.45) 0%, rgba(8,14,11,0) 100%);
+      pointer-events: none;
+    }
+    /* centered wordmark, reads naturally across the seam */
+    .mark {
+      position: absolute; top: 24px; left: 0; right: 0; z-index: 2;
+      display: flex; justify-content: center; align-items: baseline; gap: 0.35em;
+      font-family: 'Playfair Display', serif;
+      font-size: 20px; letter-spacing: 3px; text-transform: uppercase;
+      opacity: 0;
+      animation: fadeIn 1.4s ease 0.2s forwards;
+    }
+    .mark .mark-first { color: var(--gold);  font-weight: 600; text-shadow: 0 2px 12px rgba(0,0,0,0.7), 0 1px 2px rgba(0,0,0,0.55); }
+    .mark .mark-last  { color: var(--cream); font-weight: 500; text-shadow: 0 2px 12px rgba(0,0,0,0.7), 0 1px 2px rgba(0,0,0,0.55); }
+
+    /* ---------- CONTENT ---------- */
+    .hero__content {
+      position: relative; z-index: 1;
+      width: 100%; max-width: 1300px; margin: 0 auto;
+      padding: 0 clamp(24px, 6vw, 80px);
       display: flex;
-      align-items: center;
-      gap: 12px;
-      padding: 18px 28px;
-      background: var(--white);
-      border-radius: 8px;
-      text-decoration: none;
-      color: var(--dark);
-      font-weight: 600;
-      font-size: 15px;
-      box-shadow: 0 4px 20px rgba(0,0,0,0.08);
-      transition: transform 0.2s, box-shadow 0.2s;
-      border: 1px solid rgba(0,0,0,0.06);
+    }
+    .hero__inner { max-width: 540px; margin: 0 auto 5vh; text-align: center; }
+
+    .eyebrow {
+      font-size: 11px; font-weight: 500; letter-spacing: 3px;
+      text-transform: uppercase; color: var(--gold); margin-bottom: 14px;
+    }
+    .headline {
+      font-family: 'Playfair Display', serif; font-weight: 500;
+      font-size: clamp(26px, 3.8vw, 50px); line-height: 1.08;
+      letter-spacing: -0.3px; margin-bottom: 16px;
+      text-shadow: 0 2px 28px rgba(0,0,0,0.6);
+    }
+    .headline .l2 { font-style: italic; color: var(--green); }
+
+    .sub {
+      font-size: clamp(14px, 1.15vw, 17px); font-weight: 300; line-height: 1.6;
+      color: var(--muted); max-width: 440px; margin: 0 auto 22px;
+      text-shadow: 0 1px 14px rgba(0,0,0,0.6);
+    }
+    .sub strong { color: var(--cream); font-weight: 500; }
+
+    .cue {
+      display: inline-flex; flex-direction: column; align-items: center; gap: 8px;
+      font-size: 10px; letter-spacing: 3px; text-transform: uppercase;
+      color: var(--muted); text-decoration: none;
+    }
+    .cue__chev {
+      width: 18px; height: 18px;
+      border-right: 1.5px solid var(--gold); border-bottom: 1.5px solid var(--gold);
+      transform: rotate(45deg); animation: bob 2.2s ease-in-out infinite;
+    }
+    @keyframes bob {
+      0%,100% { transform: rotate(45deg) translate(0,0); opacity: .5; }
+      50%     { transform: rotate(45deg) translate(4px,4px); opacity: 1; }
     }
 
-    .social-card:hover {
-      transform: translateY(-3px);
-      box-shadow: 0 12px 40px rgba(0,0,0,0.14);
+    .rise { opacity: 0; transform: translateY(26px); animation: rise 1.2s cubic-bezier(.16,.8,.3,1) forwards; }
+    .d1{animation-delay:.5s}.d2{animation-delay:.9s}.d3{animation-delay:1.4s}.d4{animation-delay:2.0s}.d5{animation-delay:2.7s}
+    @keyframes rise { to { opacity:1; transform:translateY(0); } }
+    @keyframes fadeIn { to { opacity:1; } }
+
+    .tag {
+      position: fixed; bottom: 13px; right: 15px; z-index: 5;
+      font-size: 9px; letter-spacing: 2px; text-transform: uppercase;
+      color: rgba(246,241,232,0.4);
     }
 
-    .social-icon { font-size: 22px; }
-
-    /* FOOTER */
-    footer {
-      padding: 40px 48px;
-      text-align: center;
-      color: var(--mid);
-      font-size: 13px;
-      border-top: 1px solid rgba(0,0,0,0.08);
+    /* ---------- DESKTOP: full photo left, words right ---------- */
+    @media (min-width: 900px) {
+      .hero { align-items: center; }
+      .hero__photo { height: 100%; object-position: 4% 50%; }
+      .hero__scrim {
+        background: linear-gradient(105deg, rgba(12,22,16,0) 0%, rgba(12,22,16,0) 48%, rgba(12,22,16,0.45) 68%, rgba(12,22,16,0.80) 100%);
+      }
+      .hero__content { justify-content: flex-end; }
+      .hero__inner { margin: 0; text-align: right; max-width: 460px; }
+      .sub { margin: 0 0 22px auto; }
+      /* shift the name right so it straddles the photo edge: Jodi on the photo, Isaacson on the dark side */
+      .mark { justify-content: center; padding-left: 34%; }
     }
 
-    footer a { color: var(--green); text-decoration: none; }
-
-    /* RESPONSIVE */
-    @media (max-width: 768px) {
-      nav { padding: 16px 24px; }
-      .nav-links { display: none; }
-      .hero { grid-template-columns: 1fr; padding: 100px 24px 60px; text-align: center; }
-      .hero-image { order: -1; }
-      .hero-image img { height: 400px; }
-      .hero-cta { justify-content: center; }
-      .hero-stat { bottom: -16px; left: 10px; }
-      .truth, .message { padding: 60px 24px; }
-      .timeline-section, .transformation, .follow { padding: 60px 24px; }
-      #spark { padding: 60px 24px !important; }
-      #spark-form { grid-template-columns: 1fr !important; }
-      #spark-form button { width: 100%; }
+    @media (prefers-reduced-motion: reduce) {
+      .hero__bg, .hero__photo { animation: none; }
+      .hero__bg { transform: scale(1.2); }
+      .hero__photo { transform: none; }
+      .rise, .mark { animation: none; opacity: 1; transform: none; }
+      .cue__chev { animation: none; }
     }
+
+    /* ===== Scene 2 — The Number (built by the agent crew) ===== */
+#scene-2 {
+  min-height: 100svh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: clamp(64px, 10vh, 120px) clamp(24px, 6vw, 80px);
+  background: var(--stage);
+  color: var(--cream);
+  position: relative;
+  overflow: hidden;
+}
+#scene-2 .s2-inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: clamp(40px, 8vh, 80px);
+  width: 100%;
+  max-width: 760px;
+}
+#scene-2 .s2-eyebrow {
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+  font-size: 11px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin: 0;
+}
+#scene-2 .s2-block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: clamp(14px, 2.4vh, 22px);
+}
+#scene-2 .s2-number {
+  font-family: 'Playfair Display', serif;
+  font-weight: 500;
+  font-size: clamp(56px, 11vw, 132px);
+  line-height: 0.95;
+  letter-spacing: -0.01em;
+  display: block;
+}
+#scene-2 .s2-number .s2-unit {
+  font-size: 0.42em;
+  font-style: italic;
+  letter-spacing: 0.02em;
+  margin-left: 0.18em;
+  opacity: 0.85;
+}
+#scene-2 .s2-gain { color: var(--gold); }
+#scene-2 .s2-loss { color: var(--green); }
+#scene-2 .s2-caption {
+  font-family: 'Inter', sans-serif;
+  font-weight: 300;
+  font-size: clamp(15px, 1.6vw, 17px);
+  line-height: 1.55;
+  color: rgba(246, 241, 232, 0.62);
+  max-width: 32ch;
+  margin: 0;
+}
+#scene-2 .s2-divider {
+  width: 1px;
+  height: clamp(56px, 11vh, 104px);
+  background: linear-gradient(to bottom, rgba(246,241,232,0) 0%, rgba(212,178,94,0.45) 50%, rgba(246,241,232,0) 100%);
+}
+@media (max-width: 600px) {
+  #scene-2 .s2-inner { gap: clamp(32px, 6vh, 56px); }
+  #scene-2 .s2-divider { height: clamp(44px, 8vh, 72px); }
+}
+
+    /* ===== Scene 3 — The Real Proof (built by the agent crew) ===== */
+#scene-3 {
+  min-height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: clamp(48px, 7vh, 84px) clamp(24px, 6vw, 80px);
+  background: var(--stage);
+  color: var(--cream);
+  position: relative;
+  overflow: hidden;
+}
+#scene-3 .s3-inner {
+  width: 100%;
+  max-width: 820px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#scene-3 .s3-eyebrow {
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+  font-size: 11px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin: 0 0 22px;
+}
+#scene-3 .s3-headline {
+  font-family: 'Playfair Display', serif;
+  font-weight: 500;
+  font-size: clamp(26px, 4vw, 50px);
+  line-height: 1.18;
+  color: var(--cream);
+  margin: 0 0 clamp(36px, 6vh, 64px);
+}
+#scene-3 .s3-headline em { font-style: italic; color: var(--green); }
+#scene-3 .s3-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: clamp(20px, 4vw, 40px) clamp(28px, 5vw, 72px);
+}
+#scene-3 .s3-item {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 16px;
+  text-align: left;
+  padding: clamp(14px, 2vh, 20px) 0;
+  border-bottom: 1px solid rgba(212, 178, 94, 0.18);
+  opacity: 0;
+  transform: translateY(10px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+#scene-3 .s3-item.row-in { opacity: 1; transform: none; }
+#scene-3 .s3-marker {
+  flex: 0 0 auto;
+  width: 22px;
+  height: 22px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+#scene-3 .s3-marker svg { width: 22px; height: 22px; display: block; }
+#scene-3 .s3-marker svg circle { stroke: var(--gold); stroke-width: 1; fill: none; opacity: 0.7; }
+#scene-3 .s3-marker svg path {
+  stroke: var(--green); stroke-width: 1.7; stroke-linecap: round; stroke-linejoin: round; fill: none;
+  stroke-dasharray: 20; stroke-dashoffset: 20;            /* hidden until "checked" */
+  transition: stroke-dashoffset 0.5s ease 0.12s;
+}
+/* the check draws when its row turns on (JS adds .row-in one at a time) */
+#scene-3 .s3-item.row-in .s3-marker svg path { stroke-dashoffset: 0; }
+@media (prefers-reduced-motion: reduce) {
+  #scene-3 .s3-item, #scene-3 .s3-item .s3-text { opacity: 1 !important; transform: none !important; }
+  #scene-3 .s3-marker svg path { stroke-dashoffset: 0; transition: none; }
+}
+#scene-3 .s3-text {
+  font-family: 'Inter', sans-serif;
+  font-weight: 300;
+  font-size: clamp(15px, 1.6vw, 17px);
+  line-height: 1.45;
+  color: var(--cream);
+  letter-spacing: 0.2px;
+  opacity: 0;
+  transition: opacity 0.45s ease;
+}
+#scene-3 .s3-item.text-in .s3-text { opacity: 1; }
+@media (max-width: 640px) {
+  #scene-3 .s3-list { grid-template-columns: 1fr; gap: 0; }
+  #scene-3 .s3-item { justify-content: flex-start; }
+}
+
+    /* ===== SCENE 4 — THE PROOF (before / today) — built by the agent crew ===== */
+#scene-4{
+  background:var(--stage);
+  color:var(--cream);
+  min-height:auto;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  text-align:center;
+  padding:clamp(48px,7vh,84px) clamp(24px,6vw,80px);
+  position:relative;
+  overflow:hidden;
+}
+#scene-4::before{
+  content:"";
+  position:absolute;
+  top:50%;
+  left:50%;
+  width:min(90vw,820px);
+  height:min(90vw,820px);
+  transform:translate(-50%,-50%);
+  background:radial-gradient(circle, rgba(167,210,178,0.07) 0%, rgba(212,178,94,0.04) 38%, transparent 68%);
+  pointer-events:none;
+  z-index:0;
+}
+#scene-4 .s4-inner{
+  position:relative;
+  z-index:1;
+  width:100%;
+  max-width:920px;
+  margin:0 auto;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+}
+#scene-4 .s4-eyebrow{
+  font-family:'Inter',sans-serif;
+  font-weight:500;
+  font-size:11px;
+  letter-spacing:3px;
+  text-transform:uppercase;
+  color:var(--gold);
+  margin:0 0 clamp(14px,2vh,20px);
+}
+#scene-4 .s4-headline{
+  font-family:'Playfair Display',serif;
+  font-weight:500;
+  font-size:clamp(26px,4vw,50px);
+  line-height:1.12;
+  margin:0 0 clamp(32px,4.5vh,52px);
+  color:var(--cream);
+}
+#scene-4 .s4-headline em{
+  font-style:italic;
+  color:var(--green);
+}
+#scene-4 .s4-pair{
+  width:100%;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  gap:clamp(20px,4vw,40px);
+}
+#scene-4 .s4-figure{
+  margin:0;
+  width:100%;
+  max-width:340px;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+}
+#scene-4 .s4-frame{
+  width:100%;
+  aspect-ratio:4 / 5;
+  border-radius:6px;
+  overflow:hidden;
+  border:1px solid rgba(212,178,94,0.32);
+  box-shadow:0 22px 50px -18px rgba(0,0,0,0.65);
+  background:#0a120d;
+}
+#scene-4 .s4-frame img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  display:block;
+}
+#scene-4 .s4-caption{
+  font-family:'Inter',sans-serif;
+  font-weight:500;
+  font-size:11px;
+  letter-spacing:3px;
+  text-transform:uppercase;
+  margin:clamp(12px,1.6vh,16px) 0 0;
+}
+#scene-4 .s4-before .s4-frame{
+  opacity:0.86;
+  filter:saturate(0.92);
+}
+#scene-4 .s4-before .s4-caption{
+  color:var(--muted);
+}
+#scene-4 .s4-today .s4-caption{
+  color:var(--gold);
+}
+#scene-4 .s4-connector{
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+  gap:10px;
+  color:var(--green);
+}
+#scene-4 .s4-connector .s4-line{
+  width:1px;
+  height:30px;
+  background:linear-gradient(to bottom, transparent, rgba(212,178,94,0.55), transparent);
+}
+#scene-4 .s4-connector .s4-arrow{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  transform:rotate(90deg);
+}
+#scene-4 .s4-connector .s4-arrow svg{
+  width:24px;
+  height:24px;
+  opacity:0.85;
+}
+#scene-4 .s4-honest{
+  font-family:'Inter',sans-serif;
+  font-weight:300;
+  font-size:clamp(15px,1.5vw,17px);
+  line-height:1.65;
+  color:var(--muted);
+  max-width:580px;
+  margin:clamp(30px,4.5vh,48px) auto 0;
+}
+#scene-4 .s4-honest em{
+  font-style:italic;
+  color:var(--cream);
+}
+#scene-4 .s4-join{
+  display:inline-block;
+  margin-top:14px;
+  font-weight:500;
+  letter-spacing:0.3px;
+  color:var(--cream);
+}
+#scene-4 .s4-yt{
+  color:var(--gold);
+  text-decoration:none;
+  border-bottom:1px solid rgba(212,178,94,0.4);
+  transition:border-color .2s, color .2s;
+}
+#scene-4 .s4-yt:hover{
+  color:var(--cream);
+  border-color:var(--cream);
+}
+@media (min-width:760px){
+  #scene-4 .s4-pair{
+    flex-direction:row;
+    align-items:flex-start;
+    justify-content:center;
+    gap:clamp(20px,3vw,40px);
+  }
+  #scene-4 .s4-figure{
+    max-width:330px;
+  }
+  #scene-4 .s4-before{
+    margin-top:clamp(20px,4vh,44px);
+  }
+  #scene-4 .s4-today{
+    transform:scale(1.06);
+    transform-origin:bottom center;
+  }
+  #scene-4 .s4-today .s4-frame{
+    box-shadow:0 30px 64px -20px rgba(0,0,0,0.72);
+    border-color:rgba(212,178,94,0.5);
+  }
+  #scene-4 .s4-connector{
+    align-self:center;
+    margin-top:clamp(40px,8vh,80px);
+    flex-direction:row;
+    gap:8px;
+  }
+  #scene-4 .s4-connector .s4-line{
+    width:24px;
+    height:1px;
+    background:linear-gradient(to right, transparent, rgba(212,178,94,0.55), transparent);
+  }
+  #scene-4 .s4-connector .s4-arrow{
+    transform:rotate(0deg);
+  }
+}
+
+    /* ===== #scene-journey — compact number counter (no photos) ===== */
+#scene-journey {
+  position: relative; width: 100%;
+  min-height: auto;
+  background: var(--stage); color: var(--cream);
+  display: flex; align-items: center; justify-content: center;
+  text-align: center; overflow: hidden;
+  padding: clamp(56px, 8vh, 96px) clamp(24px, 6vw, 80px);
+}
+/* subtle glow that shifts gold -> green with the number */
+#scene-journey .sj-glow {
+  position: absolute; inset: 0; z-index: 0; pointer-events: none;
+  background: radial-gradient(70% 60% at 50% 45%, var(--sj-glow, rgba(212,178,94,0.10)) 0%, transparent 65%);
+  transition: background 0.6s linear;
+}
+#scene-journey .sj-overlay {
+  position: relative; z-index: 1; width: 100%; max-width: 720px;
+  display: flex; flex-direction: column; align-items: center;
+}
+#scene-journey .sj-eyebrow {
+  font-family: 'Inter', sans-serif; font-weight: 500; font-size: 11px;
+  letter-spacing: 3px; text-transform: uppercase; color: var(--gold); margin: 0 0 22px;
+}
+#scene-journey .sj-number-wrap { display: inline-flex; align-items: baseline; justify-content: center; gap: 0.18em; line-height: 0.95; }
+#scene-journey .sj-number {
+  font-family: 'Playfair Display', serif; font-weight: 600; line-height: 0.95;
+  font-size: clamp(64px, 11vw, 132px); letter-spacing: -0.01em; color: var(--gold);
+  transition: color 0.5s ease;
+  font-variant-numeric: tabular-nums; font-feature-settings: "tnum" 1;
+}
+#scene-journey .sj-number.sj-loss { color: var(--green); }
+#scene-journey .sj-unit {
+  font-family: 'Inter', sans-serif; font-weight: 400; font-size: clamp(15px, 2vw, 22px);
+  letter-spacing: 0.06em; color: var(--cream); opacity: 0.8;
+}
+#scene-journey .sj-caption { position: relative; margin-top: clamp(20px, 4vh, 38px); min-height: 3em; width: 100%; max-width: 520px; }
+#scene-journey .sj-caption-line {
+  position: absolute; left: 0; right: 0; top: 0; margin: 0;
+  font-family: 'Inter', sans-serif; font-weight: 300; font-size: clamp(15px, 1.8vw, 19px);
+  line-height: 1.5; letter-spacing: 0.02em; color: var(--muted);
+  opacity: 0; transform: translateY(6px); transition: opacity 0.55s ease, transform 0.55s ease;
+}
+#scene-journey .sj-caption-line.sj-show { opacity: 1; transform: translateY(0); }
+/* static summary for reduced-motion / no-JS */
+#scene-journey .sj-caption-line[data-static] { display: none; }
+@media (prefers-reduced-motion: reduce) {
+  #scene-journey .sj-number { color: var(--green); }
+  #scene-journey .sj-glow { display: none; }
+  #scene-journey .sj-caption-line[data-phase] { display: none; }
+  #scene-journey .sj-caption-line[data-static] { display: block; position: static; opacity: 1; transform: none; }
+}
+
+    /* ===== Money sections: Book · Spark · 30-Day · Follow ===== */
+#scene-book, #scene-spark, #scene-plan, #scene-follow {
+  position: relative; background: var(--stage); color: var(--cream);
+  padding: clamp(56px, 9vh, 110px) clamp(24px, 6vw, 80px); text-align: center;
+}
+.money-eyebrow { font-family: 'Inter', sans-serif; font-weight: 500; font-size: 11px; letter-spacing: 3px; text-transform: uppercase; color: var(--gold); margin: 0 0 16px; }
+.money-title { font-family: 'Playfair Display', serif; font-weight: 500; font-size: clamp(26px, 4vw, 46px); line-height: 1.18; margin: 0 0 18px; color: var(--cream); }
+.money-title em { font-style: italic; color: var(--green); }
+.money-text { font-family: 'Inter', sans-serif; font-weight: 300; font-size: clamp(15px, 1.6vw, 18px); line-height: 1.7; color: var(--muted); max-width: 560px; margin: 0 auto 28px; }
+.cta-gold { display: inline-block; padding: 16px 34px; background: var(--gold); color: #14100a; text-decoration: none; border: 0; border-radius: 6px; font-family: 'Inter', sans-serif; font-weight: 700; font-size: 15px; letter-spacing: 0.3px; cursor: pointer; transition: transform .2s, box-shadow .2s; }
+.cta-gold:hover { transform: translateY(-2px); box-shadow: 0 14px 34px rgba(212,178,94,0.25); }
+.cta-note { display: block; margin-top: 14px; font-size: 13px; color: var(--muted); }
+
+#scene-book .book-wrap { max-width: 940px; margin: 0 auto; display: grid; grid-template-columns: 1fr; gap: 36px; align-items: center; }
+#scene-book .book-cover { display: flex; justify-content: center; }
+#scene-book .book-cover img { width: 100%; max-width: 290px; border-radius: 8px; box-shadow: 0 24px 60px rgba(0,0,0,0.5); }
+#scene-book .book-info { text-align: center; }
+@media (min-width: 760px) {
+  #scene-book .book-wrap { grid-template-columns: 0.85fr 1.15fr; gap: 54px; }
+  #scene-book .book-info { text-align: left; }
+  #scene-book .book-info .money-text { margin-left: 0; }
+}
+
+.money-form { display: flex; gap: 10px; max-width: 470px; margin: 0 auto; flex-wrap: wrap; justify-content: center; }
+.money-form input[type="email"] { flex: 1 1 220px; padding: 15px 16px; border: 0; border-radius: 6px; font: inherit; font-size: 15px; color: #14100a; background: var(--cream); }
+.money-form button { white-space: nowrap; }
+.form-msg { width: 100%; min-height: 20px; margin: 12px 0 0; font-size: 13px; color: var(--green); }
+
+#scene-follow .social-row { display: flex; gap: 14px; justify-content: center; flex-wrap: wrap; margin-top: 8px; }
+#scene-follow .social-link { display: inline-flex; align-items: center; gap: 8px; padding: 13px 22px; border: 1px solid rgba(246,241,232,0.2); border-radius: 6px; color: var(--cream); text-decoration: none; font-family: 'Inter', sans-serif; font-weight: 500; font-size: 14px; transition: border-color .2s, transform .2s; }
+#scene-follow .social-link:hover { border-color: var(--gold); transform: translateY(-2px); }
+#scene-footer { background: var(--stage); color: var(--muted); text-align: center; padding: 30px 24px; font-family: 'Inter', sans-serif; font-size: 12px; line-height: 1.7; border-top: 1px solid rgba(246,241,232,0.08); }
+#scene-footer a { color: var(--gold); text-decoration: none; }
+
+    /* ===== Reviews ===== */
+#scene-reviews { text-align: center; padding-top: clamp(48px, 7vh, 84px); }
+#scene-reviews .rv-head { margin-bottom: clamp(28px, 4vh, 44px); }
+#scene-reviews .rv-viewport { overflow: hidden; width: 100%; -webkit-mask-image: linear-gradient(90deg, transparent, #000 7%, #000 93%, transparent); mask-image: linear-gradient(90deg, transparent, #000 7%, #000 93%, transparent); }
+#scene-reviews .rv-track { display: flex; width: max-content; animation: rv-marquee 55s linear infinite; }
+#scene-reviews .rv-viewport:hover .rv-track { animation-play-state: paused; }
+@keyframes rv-marquee { from { transform: translateX(0); } to { transform: translateX(-50%); } }
+@media (prefers-reduced-motion: reduce) {
+  #scene-reviews .rv-track { animation: none; }
+  #scene-reviews .rv-viewport { overflow-x: auto; -webkit-overflow-scrolling: touch; }
+}
+.review-card { flex: 0 0 320px; width: 320px; margin-right: 24px; background: rgba(246,241,232,0.04); border: 1px solid rgba(212,178,94,0.18); border-radius: 10px; padding: 32px 26px; text-align: center; display: flex; flex-direction: column; align-items: center; }
+.review-card .rv-avatar { width: 84px; height: 84px; border-radius: 50%; object-fit: cover; margin-bottom: 16px; border: 2px solid rgba(212,178,94,0.45); }
+.review-card .rv-stars { color: var(--gold); letter-spacing: 3px; font-size: 15px; margin-bottom: 14px; }
+.review-card .rv-stars .empty { color: rgba(246,241,232,0.22); }
+.review-card .rv-headline { font-family: 'Playfair Display', serif; font-weight: 600; font-style: italic; font-size: 19px; color: var(--cream); margin: 0 0 12px; line-height: 1.3; }
+.review-card .rv-quote { font-family: 'Inter', sans-serif; font-weight: 300; font-size: 15px; line-height: 1.65; color: var(--muted); margin: 0 0 16px; }
+.review-card .rv-name { font-family: 'Inter', sans-serif; font-weight: 600; font-size: 13px; letter-spacing: 1px; text-transform: uppercase; color: var(--gold); margin: 0; }
+
+    /* down-arrow scroll cue between sections */
+    .scroll-down { display: flex; justify-content: center; margin-top: clamp(30px, 4.5vh, 50px); }
+    .scroll-down a { display: block; width: 16px; height: 16px; border-right: 1.5px solid var(--gold); border-bottom: 1.5px solid var(--gold); transform: rotate(45deg); animation: bob 2.2s ease-in-out infinite; opacity: 0.55; }
+    .scroll-down a:hover { opacity: 1; }
+
+    /* ===== soft light that follows the cursor ===== */
+    .cursor-glow {
+      position: fixed; top: 0; left: 0; width: 520px; height: 520px;
+      margin: -260px 0 0 -260px;
+      border-radius: 50%;
+      background: radial-gradient(circle, rgba(255,236,190,0.30) 0%, rgba(212,178,94,0.14) 32%, transparent 68%);
+      pointer-events: none; z-index: 60;
+      opacity: 0; transition: opacity 0.5s ease;
+      will-change: transform;
+    }
+    body.glow-on .cursor-glow { opacity: 1; }
+    @media (hover: none), (prefers-reduced-motion: reduce) {
+      .cursor-glow { display: none; }
+    }
+
+    /* ===== Shared scroll-reveal system (Scenes 2+) ===== */
+    .reveal { opacity: 0; transform: translateY(28px); transition: opacity 1.1s cubic-bezier(.16,.8,.3,1), transform 1.1s cubic-bezier(.16,.8,.3,1); }
+    .reveal.in { opacity: 1; transform: none; }
+    .r1{transition-delay:.05s}.r2{transition-delay:.18s}.r3{transition-delay:.32s}.r4{transition-delay:.46s}.r5{transition-delay:.60s}.r6{transition-delay:.74s}
+    @media (prefers-reduced-motion: reduce) { .reveal { opacity: 1; transform: none; transition: none; } }
   </style>
 </head>
 <body>
 
-  <!-- NAV -->
-  <nav>
-    <a class="nav-logo" href="#">Jodi Isaacson</a>
-    <ul class="nav-links">
-      <li><a href="#story">My Story</a></li>
-      <li><a href="#transformation">Transformation</a></li>
-      <li><a href="#follow">Follow Along</a></li>
-    </ul>
-  </nav>
-
-  <!-- HERO -->
   <section class="hero">
-    <div class="hero-text">
-      <div class="hero-eyebrow">Certified Holistic Nutritionist · West Palm Beach, FL</div>
-      <h1 class="hero-headline">
-        I lost 120 lbs,<br/>
-        gained 90 back,<br/>
-        and lost <span>215 total.</span>
-      </h1>
-      <p class="hero-sub">
-        Certified Holistic Nutritionist. At 65, I proved it's never too late. I started with two minutes of movement. That's all it took.
-      </p>
-      <div class="hero-cta">
-        <a href="#story" class="btn-primary">Read My Story</a>
-        <a href="#follow" class="btn-secondary">Follow Along</a>
-      </div>
-    </div>
-    <div class="hero-image">
-      <img src="images/headshot.jpg" alt="Jodi Isaacson — Essentia Living" />
-      <div class="hero-stat">
-        <div class="hero-stat-num">215</div>
-        <div class="hero-stat-label">Pounds Lost</div>
-      </div>
-    </div>
-  </section>
+    <img class="hero__bg" src="images/jodi-walking.png" alt="" aria-hidden="true" />
+    <div class="hero__tint"></div>
+    <img class="hero__photo" src="images/jodi-walking.png" alt="Jodi Isaacson walking a sunlit path carrying fresh greens" />
+    <div class="hero__scrim"></div>
+    <div class="hero__topscrim"></div>
 
-  <!-- TRUTH -->
-  <section class="truth" id="story">
-    <div class="section-label">The Real Story</div>
-    <h2 class="section-title">This isn't a perfect transformation story. It's a real one.</h2>
-    <p class="truth-body">
-      I didn't lose 215 pounds in a straight line. I lost 120, hit a plateau that lasted a year, and figured out how to break through it. Then my husband almost died — and while I was driving back and forth to the hospital caring for him and our seven foster children, I gained 90 pounds back.<br/><br/>
-      <strong>I started over. Again.</strong><br/><br/>
-      It started with two minutes of movement. That's all I could do. Two minutes, then I had to sit down. But I kept showing up. Two minutes became five. Five became ten. One day at a time became 215 pounds released.<br/><br/>
-      Through raw whole food plant-based nutrition I reversed Type 2 diabetes, chronic anemia, and transformed my health completely. At 65 I feel more alive than I did at 45. The war with my body is over. And yours can be too.
-    </p>
-  </section>
+    <div class="mark"><span class="mark-first">Jodi</span><span class="mark-last">Isaacson</span></div>
 
-  <!-- TIMELINE -->
-  <section class="timeline-section">
-    <div class="section-label" style="text-align:center;">The Journey</div>
-    <h2 class="section-title">Real numbers. Real life.</h2>
-    <div class="timeline">
-      <div class="timeline-item">
-        <div class="timeline-num">120</div>
-        <div class="timeline-desc">Pounds lost in the first phase — through whole food plant-based eating</div>
-      </div>
-      <div class="timeline-item">
-        <div class="timeline-num">1 yr</div>
-        <div class="timeline-desc">Plateau — learned to break through it and keep going</div>
-      </div>
-      <div class="timeline-item">
-        <div class="timeline-num">90</div>
-        <div class="timeline-desc">Pounds regained when life hit hard — and that's okay</div>
-      </div>
-      <div class="timeline-item">
-        <div class="timeline-num">215</div>
-        <div class="timeline-desc">Total pounds lost — because I started over and finished</div>
-      </div>
-    </div>
-  </section>
-
-  <!-- TRANSFORMATION -->
-  <section class="transformation" id="transformation">
-    <div class="section-label">The Proof</div>
-    <h2 class="section-title">Before & After</h2>
-    <p class="transformation-sub">Real photos. No filters. No tricks.</p>
-    <div class="photos-grid">
-      <div class="photo-card">
-        <img src="images/before1.jpg" alt="Jodi before transformation" />
-        <div class="photo-label">Before</div>
-      </div>
-      <div class="photo-card">
-        <img src="images/before295.jpg" alt="Jodi during journey" />
-        <div class="photo-label">During the Journey</div>
-      </div>
-      <div class="photo-card">
-        <img src="images/after1.jpg" alt="Jodi after 215 pounds lost" />
-        <div class="photo-label">215 Lbs Lost · Age 65</div>
-      </div>
-    </div>
-  </section>
-
-  <!-- MESSAGE -->
-  <section class="message">
-    <blockquote class="message-quote">
-      "Your cells don't care how old you are. They're ready to heal the moment you give them what they need. The war is over. You can start again."
-    </blockquote>
-    <div class="message-body">
-      <p>I built Essentia Living because I needed it to exist. A place for real people — not just women, anyone — who want to get healthy, feel strong, and live their fullest life. People who have tried and failed and tried again. People who are dealing with real life while trying to take care of themselves.</p>
-      <p>I'm documenting everything — the food, the workouts, the mindset, the hard days, the victories. Including an upcoming consultation in Dallas that I'm both terrified and excited about. You'll see all of it.</p>
-      <p>This is not about perfection. It's about what's possible when you refuse to give up on yourself.</p>
-    </div>
-  </section>
-
-
-
-  <!-- BOOK -->
-  <section style="background:var(--light); padding:80px 48px;">
-    <div style="max-width:900px; margin:0 auto; display:grid; grid-template-columns:1fr 2fr; gap:60px; align-items:center;">
-      <div>
-        <img src="images/juice-book-cover.jpg" alt="The Healing Juice Connection by Jodi Isaacson" style="width:100%; border-radius:8px; box-shadow:0 20px 50px rgba(0,0,0,0.15);" />
-      </div>
-      <div>
-        <div style="font-size:12px; font-weight:600; letter-spacing:2.5px; text-transform:uppercase; color:var(--gold); margin-bottom:16px;">New Release</div>
-        <h2 style="font-family:'Playfair Display',serif; font-size:clamp(28px,3vw,42px); color:var(--dark); margin-bottom:16px; line-height:1.25;">The Healing Juice Connection</h2>
-        <p style="font-size:18px; color:var(--mid); line-height:1.7; margin-bottom:12px; font-weight:300;">62 healing juice recipes from my own kitchen — tested through my personal journey of releasing 215 pounds through raw plant-based nutrition.</p>
-        <p style="font-size:16px; color:var(--mid); line-height:1.7; margin-bottom:32px; font-weight:300;">Green elixirs, thick nourishing blends, and the exact juices I drink every day. Living nutrition that heals from the inside out.</p>
-        <div style="display:flex; align-items:center; gap:20px; flex-wrap:wrap;">
-          <a href="https://buy.stripe.com/fZu5kC20i6NM8lX0WA0x200" target="_blank" style="display:inline-block; padding:18px 40px; background:var(--green); color:#fff; text-decoration:none; border-radius:4px; font-weight:700; font-size:16px;">Buy Now — $27</a>
-          <span style="font-size:14px; color:var(--mid);">Instant digital download · PDF</span>
+    <div class="hero__content">
+      <div class="hero__inner">
+        <div class="eyebrow rise d1">Certified Holistic Nutritionist · West Palm Beach</div>
+        <h1 class="headline">
+          <span class="rise d2">I started dieting at 180.</span><br/>
+          <span class="l2 rise d3">I finally stopped at 350.</span>
+        </h1>
+        <p class="sub rise d4">
+          Then I quit dieting for good. I started over at 61, and today, at 65, I'm <strong>more than 210 pounds lighter</strong>. No starving. No tricks. I'll show you exactly how.
+        </p>
+        <div class="rise d5">
+          <a class="cue" href="#scene-journey" aria-label="Begin">
+            <span>Begin</span>
+            <span class="cue__chev"></span>
+          </a>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- SPARK PROTOCOL FREE GUIDE -->
-  <section id="spark" style="background:#3d6b4f; padding:80px 48px; text-align:center; color:#fff;">
-    <div style="max-width:760px; margin:0 auto;">
-      <div style="font-size:12px; font-weight:600; letter-spacing:2.5px; text-transform:uppercase; color:#c9a84c; margin-bottom:16px;">Free Gift</div>
-      <h2 style="font-family:'Playfair Display',serif; font-size:clamp(28px,3vw,42px); color:#fff; margin-bottom:20px; line-height:1.25;">The Spark Protocol</h2>
-      <p style="font-size:18px; color:rgba(255,255,255,0.85); line-height:1.7; margin-bottom:28px; font-weight:300;">My complete guide to reclaiming your vitality — the exact approach I used to release 215 pounds. Includes my real story, the Body &middot; Mind &middot; Spirit framework, and the recipes I eat every day.</p>
-
-      <form id="spark-form" action="https://formsubmit.co/ajax/hello@jodiisaacson.com" method="POST" style="display:grid; grid-template-columns:1fr auto; gap:12px; max-width:560px; margin:0 auto; text-align:left;">
-        <input type="hidden" name="_subject" value="New Spark Protocol request from jodiisaacson.com" />
-        <input type="hidden" name="_template" value="table" />
-        <input type="hidden" name="_captcha" value="false" />
-        <input type="hidden" name="source" value="Spark Protocol website opt-in" />
-        <input type="email" name="email" aria-label="Email address" placeholder="Enter your email" required style="width:100%; padding:18px 18px; border:0; border-radius:4px; font:inherit; font-size:16px; color:#1a1a1a; background:#fff;" />
-        <button type="submit" style="padding:18px 30px; background:#c9a84c; color:#1a1a1a; border:0; border-radius:4px; font-weight:700; font-size:16px; cursor:pointer; white-space:nowrap;">Get the Free Guide &rarr;</button>
-        <p id="spark-message" aria-live="polite" style="grid-column:1 / -1; min-height:20px; font-size:13px; color:rgba(255,255,255,0.72); text-align:center; margin-top:4px;">No spam. Just the guide. You'll get instant access after you submit.</p>
-      </form>
+  <section id="scene-journey">
+    <div class="sj-glow" aria-hidden="true"></div>
+    <div class="sj-overlay">
+      <p class="sj-eyebrow reveal r1">My whole life, in one number</p>
+      <div class="sj-number-wrap reveal r2">
+        <span class="sj-number" id="sj-number">180</span><span class="sj-unit">lbs</span>
+      </div>
+      <div class="sj-caption">
+        <p class="sj-caption-line" data-static>180 &rarr; 350 &rarr; 137. Over 210 pounds lost.</p>
+        <p class="sj-caption-line sj-show" data-phase="0">Thirty years of dieting.</p>
+        <p class="sj-caption-line" data-phase="1">350 pounds. The diets were the problem.</p>
+        <p class="sj-caption-line" data-phase="2">So I stopped. And started over.</p>
+        <p class="sj-caption-line" data-phase="3">137 pounds. Free.</p>
+      </div>
+      <div class="scroll-down"><a href="#scene-3" aria-label="Scroll to the next section"></a></div>
     </div>
+  </section>
+
+  <section id="scene-3">
+    <div class="s3-inner">
+      <p class="s3-eyebrow reveal r1">THE REAL PROOF</p>
+      <h2 class="s3-headline reveal r2">The scale was never the <em>whole story</em>.</h2>
+      <ul class="s3-list">
+        <li class="s3-item">
+          <span class="s3-marker" aria-hidden="true">
+            <svg viewBox="0 0 22 22"><circle cx="11" cy="11" r="10"/><path d="M6.5 11.3l3 3 6-6.3"/></svg>
+          </span>
+          <span class="s3-text">Symptom-free from Type&nbsp;2 diabetes</span>
+        </li>
+        <li class="s3-item">
+          <span class="s3-marker" aria-hidden="true">
+            <svg viewBox="0 0 22 22"><circle cx="11" cy="11" r="10"/><path d="M6.5 11.3l3 3 6-6.3"/></svg>
+          </span>
+          <span class="s3-text">Symptom-free from emphysema</span>
+        </li>
+        <li class="s3-item">
+          <span class="s3-marker" aria-hidden="true">
+            <svg viewBox="0 0 22 22"><circle cx="11" cy="11" r="10"/><path d="M6.5 11.3l3 3 6-6.3"/></svg>
+          </span>
+          <span class="s3-text">My heart is strong</span>
+        </li>
+        <li class="s3-item">
+          <span class="s3-marker" aria-hidden="true">
+            <svg viewBox="0 0 22 22"><circle cx="11" cy="11" r="10"/><path d="M6.5 11.3l3 3 6-6.3"/></svg>
+          </span>
+          <span class="s3-text">My body is strong</span>
+        </li>
+      </ul>
+      <div class="scroll-down"><a href="#scene-4" aria-label="Scroll to the next section"></a></div>
+    </div>
+  </section>
+
+  <section id="scene-4">
+    <div class="s4-inner">
+      <p class="s4-eyebrow reveal r1">Before &amp; After</p>
+      <h2 class="s4-headline reveal r2">Before, and <em>today</em>.</h2>
+
+      <div class="s4-pair">
+        <figure class="s4-figure s4-before reveal r3">
+          <div class="s4-frame">
+            <img src="images/ba-before.jpg" alt="Jodi Isaacson before, seated outdoors at her heaviest" loading="lazy" />
+          </div>
+          <figcaption class="s4-caption">Before</figcaption>
+        </figure>
+
+        <div class="s4-connector reveal r4" aria-hidden="true">
+          <span class="s4-line"></span>
+          <span class="s4-arrow">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="4" y1="12" x2="20" y2="12"></line>
+              <polyline points="14 6 20 12 14 18"></polyline>
+            </svg>
+          </span>
+          <span class="s4-line"></span>
+        </div>
+
+        <figure class="s4-figure s4-today reveal r5">
+          <div class="s4-frame">
+            <img src="images/ba-today.jpg" alt="Jodi Isaacson today at 65, strong at the gym" loading="lazy" />
+          </div>
+          <figcaption class="s4-caption">Today, at 65</figcaption>
+        </figure>
+      </div>
+
+      <p class="s4-honest reveal r6">
+        These are me. Not perfect. After losing 210 pounds, you have skin. Yes, it bothers me, and it never ruins my day. Stay tuned for my journey to have all of it removed.<br/>
+        <span class="s4-join">Join me on YouTube &rarr; <a class="s4-yt" href="https://youtube.com/@thejodiisaacson" target="_blank" rel="noopener">@thejodiisaacson</a></span>
+      </p>
+      <div class="scroll-down"><a href="#scene-book" aria-label="Scroll to the next section"></a></div>
+    </div>
+  </section>
+
+  <!-- BOOK -->
+  <section id="scene-book">
+    <div class="book-wrap">
+      <div class="book-cover reveal r1">
+        <img src="images/book-cover.jpg" alt="The Healing Juice Connection cookbook cover by Jodi Isaacson" loading="lazy" />
+      </div>
+      <div class="book-info">
+        <p class="money-eyebrow reveal r2">Out Now · $27</p>
+        <h2 class="money-title reveal r3">The Healing Juice <em>Connection</em></h2>
+        <p class="money-text reveal r4">38 juice recipes I reach for all the time, straight from my own kitchen. Juicing was one piece of how I lost over 210 pounds, right alongside whole, real food. These go from a healing pick-me-up to a refreshing, healthy swap for summer sodas.</p>
+        <a class="cta-gold reveal r5" href="https://buy.stripe.com/fZu5kC20i6NM8lX0WA0x200" target="_blank" rel="noopener">Buy Now · $27</a>
+        <span class="cta-note reveal r6">Instant digital download · PDF</span>
+      </div>
+    </div>
+
+    <!-- REVIEWS (same section as the book) -->
+    <div id="scene-reviews">
+      <div class="rv-head">
+      <p class="money-eyebrow reveal r1">Reader Reviews</p>
+      <h2 class="money-title reveal r2">What readers are <em>saying</em></h2>
+    </div>
+    <div class="rv-viewport"><div class="rv-track">
+      <article class="review-card reveal r1">
+        <img class="rv-avatar" src="images/review-sara.jpg" alt="Sara, reader of The Healing Juice Connection" loading="lazy" />
+        <div class="rv-stars" aria-label="5 out of 5 stars">★★★★★</div>
+        <h3 class="rv-headline">"The only juice book you'll ever need."</h3>
+        <p class="rv-quote">I've been a fan of Jodi's work for a while, and her book truly exceeded my expectations. Every single recipe is a winner. Seriously, ten out of ten! If you get your hands on it, you have to try the Watermelon Zen or the Beety Blend right away. My skin has never looked better, and I feel so much lighter and more energized.</p>
+        <p class="rv-name">Sara</p>
+      </article>
+
+      <article class="review-card reveal r2">
+        <img class="rv-avatar" src="images/review-mike.jpg" alt="Mike, reader of The Healing Juice Connection" loading="lazy" />
+        <div class="rv-stars" aria-label="5 out of 5 stars">★★★★★</div>
+        <h3 class="rv-headline">"Finally, juices that taste good AND make you feel better."</h3>
+        <p class="rv-quote">As a guy who sticks to a clean-eating lifestyle, I know how hard it is to find juices that actually taste good and make you feel better. Jodi really got the balance right. The flavors in the 'Thick Juices' section are honestly impressive. I keep coming back to the Golden Fire. The blend of fresh turmeric, ginger, and citrus just works, and that bit of black pepper is a smart touch for absorption. You can tell every recipe was truly tested in her own kitchen.</p>
+        <p class="rv-name">Mike</p>
+      </article>
+
+      <article class="review-card reveal r3">
+        <img class="rv-avatar" src="images/review-carl.jpg" alt="Carl, reader of The Healing Juice Connection" loading="lazy" />
+        <div class="rv-stars" aria-label="5 out of 5 stars">★★★★★</div>
+        <h3 class="rv-headline">"More than a recipe book. It's a true guide to healing."</h3>
+        <p class="rv-quote">I've bought plenty of juicing books before, but The Healing Juice Connection is completely different. Reading Jodi's personal story about her wellness journey and her massive weight transformation immediately resonated with me and gave me so much hope. The recipes are simple but incredibly intentional. My absolute favorite is the Emerald Vitality. I make it every single morning, and the clean, caffeine-free energy surge it gives me is unreal. If you want a book written from real experience and a genuine heart, this is it!</p>
+        <p class="rv-name">Carl</p>
+      </article>
+
+      <article class="review-card reveal r4">
+        <img class="rv-avatar" src="images/review-sandra.jpg" alt="Sandra, reader of The Healing Juice Connection" loading="lazy" />
+        <div class="rv-stars" aria-label="4 out of 5 stars">★★★★<span class="empty">★</span></div>
+        <h3 class="rv-headline">"Perfect for juicing beginners and pros alike."</h3>
+        <p class="rv-quote">I was always intimidated by green juices, but this book made starting so easy. The storage and freshness guide completely changed how I meal-prep my week. I started with the Soft Green recipe because it's a bit milder with pear and cucumber, and it's completely replaced my afternoon slump coffee. The book is gorgeous, easy to navigate, and the 'Kitchen Essentials' section helped me figure out exactly what equipment I actually needed. Highly recommend!</p>
+        <p class="rv-name">Sandra</p>
+      </article>
+
+      <article class="review-card reveal r5">
+        <img class="rv-avatar" src="images/review-kara.jpg" alt="Kara, reader of The Healing Juice Connection" loading="lazy" />
+        <div class="rv-stars" aria-label="4 out of 5 stars">★★★★<span class="empty">★</span></div>
+        <h3 class="rv-headline">"Amazing recipes, just had to tweak one ingredient."</h3>
+        <p class="rv-quote">I bought this book because I was looking for clean, caffeine-free ways to boost my energy, and the Green Zest recipe delivers exactly that. It's bright, crisp, and hits the spot. My only minor complaint is that a few recipes use a lot of fresh ginger or cilantro, which can overpower the drink if you aren't careful. Jodi actually notes in the book that you can swap cilantro for parsley, which I appreciated. Once I adjusted the ratios to my taste, the drinks were perfect. Highly recommend for anyone looking to reset their health!</p>
+        <p class="rv-name">Kara</p>
+      </article>
+
+      <article class="review-card reveal r6">
+        <img class="rv-avatar" src="images/review-julie.jpg" alt="Julie, reader of The Healing Juice Connection" loading="lazy" />
+        <div class="rv-stars" aria-label="4 out of 5 stars">★★★★<span class="empty">★</span></div>
+        <h3 class="rv-headline">"Great book, but some recipes are definitely an acquired taste."</h3>
+        <p class="rv-quote">This book is beautiful and very well put together. The Fennel Fresh juice has become a surprising favorite of mine for handling afternoon bloating. That being said, as someone completely new to green juices, some of the recipes in the 'Green Elixirs' section feel a bit too intensely healthy or bitter for my palate right now. I wish there were a few more fruit-heavy options to transition with, but if you love pure, authentic green nutrition, you will absolutely think this is a 5-star book!</p>
+        <p class="rv-name">Julie</p>
+      </article>
+
+      <article class="review-card reveal r1">
+        <img class="rv-avatar" src="images/review-betty.jpg" alt="Betty, reader of The Healing Juice Connection" loading="lazy" />
+        <div class="rv-stars" aria-label="4 out of 5 stars">★★★★<span class="empty">★</span></div>
+        <h3 class="rv-headline">"Great formulas and guidance, just requires a commitment."</h3>
+        <p class="rv-quote">The Healing Juice Connection is easily one of the best-designed juicing guides I've picked up. The structure is clear, and the Kitchen Essentials section is great, though you definitely need a high-quality machine like a masticating juicer or a high-powered blender to get the textures right. I've been making the Fresh Fizz recipe consistently and love how light and energized it makes me feel. The only reason I'm giving it 4 stars instead of 5 is simply the time and cost commitment of keeping up with a high volume of fresh, organic produce every single week. If you are ready to make that investment in your wellness routine, this book is an excellent roadmap.</p>
+        <p class="rv-name">Betty</p>
+      </article>
+
+      <article class="review-card reveal r1">
+        <img class="rv-avatar" src="images/review-tom.jpg" alt="Tom, reader of The Healing Juice Connection" loading="lazy" />
+        <div class="rv-stars" aria-label="5 out of 5 stars">★★★★★</div>
+        <h3 class="rv-headline">"Beautiful, refreshing blends that are perfect for sharing."</h3>
+        <p class="rv-quote">I've been quietly working my way through this book, and it has quickly become a staple in my daily routine. This past weekend, I made a double batch of the Strawberry Kiwi Spark and the Fresh Fizz to pack in canteens for a family picnic. They were an absolute hit with everyone, even those who don't typically drink green or fresh juices. The flavor profiles are incredibly balanced and refreshing without being overly sweet. It's just a beautiful, thoughtful book that makes it easy to bring pure, healthy ingredients into everyday moments.</p>
+        <p class="rv-name">Tom</p>
+      </article>
+    </div></div>
+    </div>
+    <div class="scroll-down"><a href="#scene-spark" aria-label="Scroll to the next section"></a></div>
+  </section>
+
+  <!-- SPARK PROTOCOL (free opt-in) -->
+  <section id="scene-spark">
+    <p class="money-eyebrow reveal r1">Free Gift</p>
+    <h2 class="money-title reveal r2">The Spark <em>Protocol</em></h2>
+    <p class="money-text reveal r3">My free guide to getting your body and energy back. The exact approach I used to lose over 210 pounds without starving. My story, the Body · Mind · Spirit framework, and the food I eat every day.</p>
+    <form class="money-form reveal r4" data-form="spark">
+      <input type="email" name="email" placeholder="Enter your email" aria-label="Email address" required />
+      <button type="submit" class="cta-gold">Send Me the Free Guide →</button>
+      <p class="form-msg" aria-live="polite"></p>
+    </form>
+    <div class="scroll-down"><a href="#scene-plan" aria-label="Scroll to the next section"></a></div>
+  </section>
+
+  <!-- 30-DAY PLAN (tease + early access) -->
+  <section id="scene-plan">
+    <p class="money-eyebrow reveal r1">Coming Soon</p>
+    <h2 class="money-title reveal r2">The 30-Day <em>Plan</em></h2>
+    <p class="money-text reveal r3">A complete, day-by-day plan to stop dieting and start losing. Exactly what to eat, how to move, and how to feel full while the weight comes off. No starving. No guesswork. Be first to know the day it opens.</p>
+    <form class="money-form reveal r4" data-form="plan">
+      <input type="email" name="email" placeholder="Enter your email" aria-label="Email address" required />
+      <button type="submit" class="cta-gold">I Want First Access</button>
+      <p class="form-msg" aria-live="polite"></p>
+    </form>
+    <div class="scroll-down"><a href="#scene-follow" aria-label="Scroll to the next section"></a></div>
   </section>
 
   <!-- FOLLOW -->
-  <section class="follow" id="follow">
-    <div class="section-label">Follow Along</div>
-    <h2 class="section-title">Join the journey</h2>
-    <p class="follow-sub">I'm documenting everything — the wins, the setbacks, the real stuff. Follow along on your platform of choice.</p>
-    <div class="social-grid">
-      <a class="social-card" href="https://youtube.com/@thejodiisaacson" target="_blank" rel="noopener">
-        <span class="social-icon">▶</span>
-        <span>YouTube</span>
-      </a>
-      <a class="social-card" href="https://instagram.com/thejodiisaacson" target="_blank" rel="noopener">
-        <span class="social-icon">◈</span>
-        <span>Instagram</span>
-      </a>
-      <a class="social-card" href="https://tiktok.com/@thejodiisaacson" target="_blank" rel="noopener">
-        <span class="social-icon">♪</span>
-        <span>TikTok</span>
-      </a>
-      <a class="social-card" href="https://x.com/thejodiisaacson" target="_blank" rel="noopener">
-        <span class="social-icon">✕</span>
-        <span>X / Twitter</span>
-      </a>
+  <section id="scene-follow">
+    <p class="money-eyebrow reveal r1">Follow Along</p>
+    <h2 class="money-title reveal r2">Join the <em>journey</em></h2>
+    <p class="money-text reveal r3">I'm documenting all of it: the wins, the hard days, the real food. Follow along wherever you watch.</p>
+    <div class="social-row reveal r4">
+      <a class="social-link" href="https://youtube.com/@thejodiisaacson" target="_blank" rel="noopener">YouTube</a>
+      <a class="social-link" href="https://instagram.com/thejodiisaacson" target="_blank" rel="noopener">Instagram</a>
+      <a class="social-link" href="https://tiktok.com/@thejodiisaacson" target="_blank" rel="noopener">TikTok</a>
+      <a class="social-link" href="https://x.com/thejodiisaacson" target="_blank" rel="noopener">X</a>
     </div>
   </section>
 
-  <!-- FOOTER -->
-  <footer>
-    <p>© 2026 Jodi Isaacson · Certified Holistic Nutritionist · West Palm Beach, FL · <a href="mailto:hello@jodiisaacson.com">hello@jodiisaacson.com</a></p>
+  <footer id="scene-footer">
+    © <span id="yr">2026</span> Jodi Isaacson · Certified Holistic Nutritionist · West Palm Beach, FL · <a href="mailto:hello@jodiisaacson.com">hello@jodiisaacson.com</a>
   </footer>
 
+  <script>
+    (function () {
+      var els = document.querySelectorAll('.reveal');
+      var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+      if (!('IntersectionObserver' in window) || reduce) {
+        els.forEach(function (el) { el.classList.add('in'); });
+        return;
+      }
+      var io = new IntersectionObserver(function (entries) {
+        entries.forEach(function (e) {
+          if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); }
+        });
+      }, { threshold: 0.18, rootMargin: '0px 0px -8% 0px' });
+      els.forEach(function (el) { io.observe(el); });
+    })();
+  </script>
 
   <script>
-    const sparkForm = document.getElementById('spark-form');
-    const sparkMessage = document.getElementById('spark-message');
+  /* ===== soft light following the cursor (desktop, motion-safe) ===== */
+  (function () {
+    var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    var fine = window.matchMedia && window.matchMedia('(hover: hover) and (pointer: fine)').matches;
+    if (reduce || !fine) return;
 
-    if (sparkForm) {
-      sparkForm.addEventListener('submit', async (event) => {
-        event.preventDefault();
-        const submitButton = sparkForm.querySelector('button[type="submit"]');
-        const formData = new FormData(sparkForm);
-        submitButton.disabled = true;
-        submitButton.textContent = 'Sending...';
-        sparkMessage.textContent = 'Saving your email and opening the guide...';
+    var glow = document.createElement('div');
+    glow.className = 'cursor-glow';
+    glow.setAttribute('aria-hidden', 'true');
+    document.body.appendChild(glow);
 
-        try {
-          await fetch(sparkForm.action, {
-            method: 'POST',
-            body: formData,
-            headers: { 'Accept': 'application/json' }
-          });
-        } catch (error) {
-          console.warn('Spark Protocol lead notification failed:', error);
-        } finally {
-          window.location.href = '/spark-thank-you.html';
+    var tx = window.innerWidth / 2, ty = window.innerHeight / 2, cx = tx, cy = ty, shown = false;
+    window.addEventListener('mousemove', function (e) {
+      tx = e.clientX; ty = e.clientY;
+      if (!shown) { shown = true; document.body.classList.add('glow-on'); }
+    }, { passive: true });
+    // one loop that never stops, so the light always follows
+    (function loop() {
+      cx += (tx - cx) * 0.15;
+      cy += (ty - cy) * 0.15;
+      glow.style.transform = 'translate(' + cx + 'px,' + cy + 'px)';
+      window.requestAnimationFrame(loop);
+    })();
+  })();
+  </script>
+
+  <script>
+  /* ===== email opt-in forms (Spark Protocol + 30-Day Plan) ===== */
+  (function () {
+    var yr = document.getElementById('yr');
+    if (yr) { var d = new Date(); if (!isNaN(d)) yr.textContent = d.getFullYear(); }
+
+    var forms = document.querySelectorAll('.money-form');
+    Array.prototype.forEach.call(forms, function (form) {
+      form.addEventListener('submit', function (e) {
+        e.preventDefault();
+        var btn = form.querySelector('button');
+        var msg = form.querySelector('.form-msg');
+        var input = form.querySelector('input[name="email"]');
+        var which = form.getAttribute('data-form');
+        if (!input || !input.value) return;
+        var orig = btn.textContent;
+        btn.disabled = true; btn.textContent = 'Sending…';
+
+        var data = new FormData();
+        data.append('email', input.value);
+        data.append('_captcha', 'false');
+        data.append('_subject', which === 'spark'
+          ? 'New Spark Protocol request from jodiisaacson.com'
+          : 'New 30-Day Plan early-access request from jodiisaacson.com');
+        data.append('source', which === 'spark' ? 'Spark Protocol opt-in' : '30-Day Plan early access');
+
+        fetch('https://formsubmit.co/ajax/hello@jodiisaacson.com', {
+          method: 'POST', body: data, headers: { 'Accept': 'application/json' }
+        }).then(function () {
+          form.reset();
+          msg.textContent = which === 'spark'
+            ? "You're on the list! Your guide is on its way to your inbox. 🌿"
+            : "You're on the list. I'll email you the moment it opens. 🌿";
+          btn.textContent = 'Done ✓';
+        }).catch(function () {
+          msg.textContent = 'Something went wrong. Please email hello@jodiisaacson.com';
+          btn.disabled = false; btn.textContent = orig;
+        });
+      });
+    });
+  })();
+  </script>
+
+  <script>
+  /* ===== #scene-journey — compact counter, animates when scrolled into view ===== */
+  (function () {
+    var scene = document.getElementById('scene-journey');
+    if (!scene) return;
+    var glow     = scene.querySelector('.sj-glow');
+    var numberEl = scene.querySelector('#sj-number');
+    var captions = scene.querySelectorAll('.sj-caption-line[data-phase]');
+    if (!numberEl) return;
+
+    var rm = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)');
+    if (rm && rm.matches) return; // static fallback handled by CSS
+
+    function clamp(v, lo, hi) { return v < lo ? lo : (v > hi ? hi : v); }
+    function ease(t) { t = clamp(t, 0, 1); return t * t * (3 - 2 * t); }
+
+    // p 0->1 across the whole animation: 0..0.45 climb 180->350, 0.45..1 fall 350->137
+    function weightFor(p) {
+      if (p < 0.45) return Math.round(180 + (350 - 180) * (p / 0.45));
+      return Math.round(350 - (350 - 137) * ((p - 0.45) / 0.55));
+    }
+    function captionPhase(p) {
+      if (p < 0.42) return 0;
+      if (p < 0.55) return 1;
+      if (p < 0.95) return 2;
+      return 3;
+    }
+
+    var lastW = -1, lastPhase = -1, lastLoss = null;
+    function render(p) {
+      var w = weightFor(p);
+      if (w !== lastW) { numberEl.textContent = w; lastW = w; }
+      var loss = p >= 0.45;
+      if (loss !== lastLoss) {
+        numberEl.classList.toggle('sj-loss', loss);
+        if (glow) glow.style.setProperty('--sj-glow', loss ? 'rgba(167,210,178,0.12)' : 'rgba(212,178,94,0.12)');
+        lastLoss = loss;
+      }
+      var phase = captionPhase(p);
+      if (phase !== lastPhase) {
+        for (var c = 0; c < captions.length; c++) {
+          captions[c].classList.toggle('sj-show', parseInt(captions[c].getAttribute('data-phase'), 10) === phase);
         }
+        lastPhase = phase;
+      }
+    }
+
+    // timed animation: climb, brief hold at peak, descend
+    var CLIMB = 1500, HOLD = 700, FALL = 2200;
+    var TOTAL = CLIMB + HOLD + FALL;
+    var startTs = null, running = false;
+    function frame(ts) {
+      if (startTs === null) startTs = ts;
+      var el = ts - startTs;
+      var p;
+      if (el < CLIMB) {                       // 0 -> 0.45
+        p = 0.45 * ease(el / CLIMB);
+      } else if (el < CLIMB + HOLD) {         // hold at 0.45
+        p = 0.45;
+      } else {                                 // 0.45 -> 1
+        p = 0.45 + 0.55 * ease((el - CLIMB - HOLD) / FALL);
+      }
+      render(p);
+      if (el < TOTAL) { window.requestAnimationFrame(frame); }
+      else { render(1); running = false; window.__journeyDone = true; document.dispatchEvent(new Event('journey:done')); }
+    }
+    function play() {
+      if (running) return;
+      running = true; startTs = null;
+      window.requestAnimationFrame(frame);
+    }
+
+    if ('IntersectionObserver' in window) {
+      var io = new IntersectionObserver(function (entries) {
+        entries.forEach(function (e) { if (e.isIntersecting) play(); });
+      }, { threshold: 0.5 });
+      io.observe(scene);
+    } else {
+      play();
+    }
+  })();
+  </script>
+
+  <script>
+  /* ===== Reviews marquee: duplicate cards for a seamless endless scroll ===== */
+  (function () {
+    var track = document.querySelector('#scene-reviews .rv-track');
+    if (!track) return;
+    var cards = track.querySelectorAll('.review-card');
+    Array.prototype.forEach.call(cards, function (c) { c.classList.add('in'); }); // always visible in the marquee
+    var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    if (reduce) return; // no animation; user scrolls the row manually
+    Array.prototype.forEach.call(cards, function (c) {
+      var clone = c.cloneNode(true);
+      clone.setAttribute('aria-hidden', 'true');
+      track.appendChild(clone);
+    });
+  })();
+  </script>
+
+  <script>
+  /* ===== Scene 3 checklist: starts after the number reaches 137, then reveals
+           each row one at a time (checkmark first, then its sentence) ===== */
+  (function () {
+    var scene = document.getElementById('scene-3');
+    if (!scene) return;
+    var items = scene.querySelectorAll('.s3-item');
+    if (!items.length) return;
+
+    var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    if (reduce) {
+      Array.prototype.forEach.call(items, function (it) { it.classList.add('row-in', 'text-in'); });
+      return;
+    }
+
+    var started = false;
+    function run() {
+      if (started) return; started = true;
+      Array.prototype.forEach.call(items, function (it, i) {
+        var base = i * 1000;                                   // 1s per row
+        setTimeout(function () { it.classList.add('row-in'); }, base);        // check appears
+        setTimeout(function () { it.classList.add('text-in'); }, base + 450); // then the sentence
       });
     }
+
+    var inView = false;
+    var numberDone = (window.__journeyDone === true);
+    function maybe() { if (inView && numberDone) run(); }
+
+    document.addEventListener('journey:done', function () { numberDone = true; maybe(); });
+
+    if ('IntersectionObserver' in window) {
+      var io = new IntersectionObserver(function (entries) {
+        entries.forEach(function (e) {
+          if (e.isIntersecting) { inView = true; io.unobserve(scene); maybe(); setTimeout(run, 6000); }
+        });
+      }, { threshold: 0.35 });
+      io.observe(scene);
+    } else { inView = true; numberDone = true; run(); }
+  })();
   </script>
+
 </body>
 </html>
